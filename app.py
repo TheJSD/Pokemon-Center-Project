@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 
@@ -11,5 +11,8 @@ migrate = Migrate(app, db)
 from seed import seed
 app.cli.add_command(seed)
 
-
 # blueprints
+
+@app.route("/")
+def home():
+    return render_template('index.jinja')
