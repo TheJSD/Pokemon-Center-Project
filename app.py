@@ -11,7 +11,9 @@ migrate = Migrate(app, db)
 from seed import seed
 app.cli.add_command(seed)
 
-# blueprints
+from controllers.pokémon_controller import pokémon_blueprint
+
+app.register_blueprint(pokémon_blueprint)
 
 @app.route("/")
 def home():
