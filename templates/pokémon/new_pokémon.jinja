@@ -8,10 +8,17 @@
   <label for="Nickname">Nickname:</label>
   <input type="text" id="nickname">
 
-  <label for="Date of Birth (DD/MM/YYYY):">Date of Birth (DD/MM/YYYY):</label>
+  <label for="Date of Birth (DD/MM/YYYY)">Date of Birth (DD/MM/YYYY):</label>
   <input type="text" id="date of birth">
 
+  <label for="Assigned Nurse">Assigned Nurse:</label>
+  <select name="nurse", id="nurse">
+    {% for nurse in nurses %}
+      <option value="nurse.id">{{nurse.name}}</option>
+    {% endfor %}
+  </select>
 
+  
 
   </form>
 {% endblock content %}

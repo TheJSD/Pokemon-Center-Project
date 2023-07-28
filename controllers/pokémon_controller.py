@@ -18,4 +18,4 @@ def show_pokémon(id):
 @pokémon_blueprint.route("/pokémon/new_pokémon")
 def add_pokémon():
     nurses = Nurse.query.all()
-    return render_template("pokémon/new_pokémon.jinja")
+    return render_template("pokémon/new_pokémon.jinja", nurses=nurses)
