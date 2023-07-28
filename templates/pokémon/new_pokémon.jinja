@@ -1,5 +1,7 @@
 {% extends 'base.jinja' %}
 {% block content %} {#WHAT I NEED - species, nickname, dob, contact, nurse, notes#}
+  <h1>Register a new Pokémon:</h1>
+  
   <form action="" method="POST">
 
   <label for="Pokémon Species">Pokémon Species:</label>
@@ -18,7 +20,9 @@
     {% endfor %}
   </select>
 
-  
+  <label for="Treatment Notes">Treatment Notes:</label>
+
+
 
   </form>
 {% endblock content %}

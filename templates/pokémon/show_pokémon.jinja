@@ -17,5 +17,10 @@
     {% else %}
       This Pokémon has not been assigned a nurse
     {% endif %}</p>
-    <p>Treatment Notes: {{single_pokémon.treatment_notes}}</p>
+    {% if single_pokémon.treatment_notes == None %}
+      <p>There are no treatment notes.</p>
+    {% else %}
+      <p>{{single_pokémon.treatment_notes}}</p>
+    {% endif %}
+    
 {% endblock content %}
