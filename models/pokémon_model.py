@@ -17,4 +17,8 @@ class Pokémon(db.Model):
     def __repr__(self):
         return (f"<Nurse: {self.name}, {self.id}>")
     
-    
+
+
+def empty_returns_null(field):
+    if field != "":
+        return field

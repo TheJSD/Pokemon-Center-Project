@@ -2,27 +2,30 @@
 {% block content %} {#WHAT I NEED - species, nickname, dob, contact, nurse, notes#}
   <h1>Register a new Pokémon:</h1>
   
-  <form action="" method="POST">
+  <form action="/pokémon" method="POST">
 
-  <label for="Pokémon Species">Pokémon Species:</label>
-  <input type="text" id="species" required>
+    <label for="species">Pokémon Species:</label>
+    <input type="text" id="species" name="species" required>
 
-  <label for="Nickname">Nickname:</label>
-  <input type="text" id="nickname">
+    <label for="nickname">Nickname:</label>
+    <input type="text" id="nickname" name="nickname">
 
-  <label for="Date of Birth (DD/MM/YYYY)">Date of Birth (DD/MM/YYYY):</label>
-  <input type="text" id="date of birth">
+    <label for="contact">Contact:</label>
+    <input type="text", id="contact" name="contact" required>
 
-  <label for="Assigned Nurse">Assigned Nurse:</label>
-  <select name="nurse", id="nurse">
-    {% for nurse in nurses %}
-      <option value="nurse.id">{{nurse.name}}</option>
-    {% endfor %}
-  </select>
+    <label for="date_of_birth">Date of Birth (DD/MM/YYYY):</label>
+    <input type="text" id="date_of_birth" name="date_of_birth">
 
-  <label for="Treatment Notes">Treatment Notes:</label>
+    <label for="nurse">Assigned Nurse:</label>
+    <select name="nurse", id="nurse">
+      {% for nurse in nurses %}
+        <option value={{nurse.id}}>{{nurse.name}}</option>
+      {% endfor %}
+    </select>
 
+    <label for="treatment_notes">Treatment Notes:</label>
+    <input type="text" id="treatment_notes" name="treatment_notes">
 
-
+    <button type="submit">Register Pokémon</button>
   </form>
 {% endblock content %}
