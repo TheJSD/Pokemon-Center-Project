@@ -5,5 +5,17 @@
   {% else %}
     <h1>{{single_pokémon.species}}</h1>
   {% endif %}
-    LIST MORE INFO HERE
+    <ul>
+    <li>Contact: {{single_pokémon.contact}}</li>
+    <li>Date of Birth: {{single_pokémon.dob}}</li>
+    </ul>
+
+    <h2>Treatment:</h2>
+    <p>Assigned Nurse:
+    {% if single_pokémon.nurse is not none %}
+      {{single_pokémon.nurse}}
+    {% else %}
+      This Pokémon has not been assigned a nurse
+    {% endif %}</p>
+    <p>Treatment Notes: {{single_pokémon.treatment_notes}}</p>
 {% endblock content %}
