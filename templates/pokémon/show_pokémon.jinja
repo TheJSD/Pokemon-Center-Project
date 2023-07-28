@@ -1,0 +1,9 @@
+{% extends 'base.jinja' %}
+{% block content %}
+  {% if single_pokémon.nickname is not none %}
+    <h1>{{single_pokémon.nickname}} ({{single_pokémon.species}})</h1>
+  {% else %}
+    <h1>{{single_pokémon.species}}</h1>
+  {% endif %}
+    LIST MORE INFO HERE
+{% endblock content %}

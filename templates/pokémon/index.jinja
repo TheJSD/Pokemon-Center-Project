@@ -6,14 +6,14 @@
     {% if single_pokémon.nickname is not none %}
       <li>
         <ul>
-          <li>Name: {{single_pokémon.nickname}}</li>
+          <li><a href="/pokémon/{{single_pokémon.id}}">Name: {{single_pokémon.nickname}}</a></li>
           <li>Species: {{single_pokémon.species}}</li>
         
       
       {% else %}
         <li>
           <ul>
-            <li>Name: {{single_pokémon.species}}</li>
+            <li><a href="/pokémon/{{single_pokémon.id}}">Name: {{single_pokémon.species}}</a></li>
           
         
       {% endif %}
