@@ -18,6 +18,7 @@
 
     <label for="nurse">Assigned Nurse:</label>
     <select name="nurse", id="nurse">
+        <option value="None">None</option>
       {% for nurse in nurses %}
         <option value={{nurse.id}}>{{nurse.name}}</option>
       {% endfor %}
