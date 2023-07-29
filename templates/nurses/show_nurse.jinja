@@ -5,4 +5,16 @@
   Todo: Show all pokemon assigned to a nurse.
 
     <a href="{{nurse.id}}/edit"><button>Edit Details</button></a>
+  <h2> Assigned Pokémon:</h2>
+    <ul>
+    {% for single_pokémon in assigned_pokémon %}
+      <li>
+      {% if single_pokémon.nickname is not none %}
+        <a href="/pokémon/{{single_pokémon.id}}">{{single_pokémon.nickname}} ({{single_pokémon.species}})</a>
+        {%else%}
+        <a href="/pokémon/{{single_pokémon.id}}">{{single_pokémon.species}}</a>
+      {% endif %}
+      </li>
+    {% endfor %}
+    </ul>
 {% endblock content %}

@@ -26,7 +26,8 @@ def add_nurse():
 @nurses_blueprint.route("/nurses/<id>")
 def show_nurse(id):
     nurse = Nurse.query.get(id)
-    return render_template("nurses/show_nurse.jinja", nurse=nurse)
+    assigned_pokémon = Pokémon.query.filter_by(nurse = id)
+    return render_template("nurses/show_nurse.jinja", nurse=nurse, assigned_pokémon=assigned_pokémon)
 
 @nurses_blueprint.route("/nurses/<id>/edit")
 def edit_nurse(id):
