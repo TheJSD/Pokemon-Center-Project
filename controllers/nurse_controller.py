@@ -22,3 +22,8 @@ def add_nurse():
     db.session.add(new_nurse)
     db.session.commit()
     return redirect("/nurses")
+
+@nurses_blueprint.route("/nurses/<id>")
+def show_nurse(id):
+    nurse = Nurse.query.get(id)
+    return render_template("nurses/show_nurse.jinja", nurse=nurse)
