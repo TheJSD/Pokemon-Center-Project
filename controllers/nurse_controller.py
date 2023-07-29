@@ -27,3 +27,16 @@ def add_nurse():
 def show_nurse(id):
     nurse = Nurse.query.get(id)
     return render_template("nurses/show_nurse.jinja", nurse=nurse)
+
+@nurses_blueprint.route("/nurses/<id>/edit")
+def edit_nurse(id):
+    nurse = Nurse.query.get(id)
+    return render_template ("nurses/edit_nurse.jinja", nurse=nurse)
+
+@nurses_blueprint.route("/nurses/<id>", methods=["post"])
+def update_nurse(id):
+    nurse= Nurse.query.get(id)
+    name = request.form["name"]
+    nurse.name = name
+    db.session.commit()
+    return redirect (f"/nurses/{id}")

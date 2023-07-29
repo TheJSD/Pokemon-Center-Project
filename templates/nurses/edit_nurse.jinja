@@ -1,12 +1,12 @@
 {% extends 'base.jinja' %}
 {% block content %}
-  <h1>Register a new Nurse:</h1>
+  <h1>Update {{nurse.name}}:</h1>
   
-  <form action="/nurse" method="POST">
+  <form action="/nurses/{{nurse.id}}" method="POST">
 
     <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
+    <input type="text" id="name" name="name" required value="{{nurse.name}}">
 
-    <button type="submit">Register Nurse</button>
+    <button type="submit">Update Nurse details</button>
   </form>
 {% endblock content %}
