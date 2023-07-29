@@ -1,5 +1,5 @@
 {% extends 'base.jinja' %}
-{% block content %} {#WHAT I NEED - species, nickname, dob, contact, nurse, notes#}
+{% block content %}
   {% if single_pokémon.nickname != None %}
     <h1>Update {{single_pokémon.nickname}} ({{single_pokémon.species}})</h1>
   {% else %}
