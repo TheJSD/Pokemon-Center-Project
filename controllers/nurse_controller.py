@@ -41,3 +41,13 @@ def update_nurse(id):
     nurse.name = name
     db.session.commit()
     return redirect (f"/nurses/{id}")
+
+@nurses_blueprint.route("/nurses/<id>/delete", methods = ["post"])
+def delete_nurse(id):
+    nurse = Nurse.query.get(id)
+    assigned_pokémon = Pokémon.query.filter_by(nurse = id)
+    for single_pokémon in assigned_pokémon:
+        single_pokémon.nurse = None
+    db.session.delete(nurse)
+    db.session.commit()
+    return redirect("/nurses")

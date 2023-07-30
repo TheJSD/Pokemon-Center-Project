@@ -76,3 +76,10 @@ def update_pokémon(id):
     single_pokémon.contact=contact
     db.session.commit()
     return redirect (f"/pokémon/{id}")
+
+@pokémon_blueprint.route("/pokémon/<id>/delete", methods = ["post"])
+def delete_pokémon(id):
+    single_pokémon = Pokémon.query.get(id)
+    db.session.delete(single_pokémon)
+    db.session.commit()
+    return redirect("/pokémon")

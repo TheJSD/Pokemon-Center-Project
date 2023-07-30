@@ -5,6 +5,9 @@
   Todo: Show all pokemon assigned to a nurse.
 
     <a href="{{nurse.id}}/edit"><button>Edit Details</button></a>
+    <form action="{{nurse.id}}/delete" method="post">
+    <button>Delete Nurse</button>
+    </form>
   <h2> Assigned Pokémon:</h2>
     <ul>
     {% for single_pokémon in assigned_pokémon %}

@@ -23,5 +23,8 @@
       <p>{{single_pokémon.treatment_notes}}</p>
     {% endif %}
     
-    <a href="{{single_pokémon.id}}/edit"><button>Edit Pokémon</button></a>
+    <a href="{{single_pokémon.id}}/delete"><button>Edit Pokémon</button></a>
+    <form action="{{single_pokémon.id}}/delete" method="post">
+    <button>Delete Pokémon</button>
+    </form>
 {% endblock content %}
