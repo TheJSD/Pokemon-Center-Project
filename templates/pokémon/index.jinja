@@ -1,7 +1,10 @@
 {% extends 'base.jinja' %}
 {% block content %}
   <div class="container">
-  <h1 class="title">Pokémon:</h1>
+    <div class="title_and_button">
+      <h1 class="title">Pokémon:</h1>
+      <a href="pokémon/new_pokémon"><button class="primary__button">Register Pokémon</button></a>
+    </div>
   <ul>
     
   {% for single_pokémon in pokémon  %}

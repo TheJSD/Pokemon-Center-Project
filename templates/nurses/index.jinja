@@ -1,7 +1,12 @@
 {% extends 'base.jinja' %}
 {% block content %}
 <div class="container">
-  <h1 class="title">Nurses:</h1>
+  
+  <div class="title_and_button">
+    <h1 class="title">Nurses:</h1>
+    <a href="nurses/new"><button class="primary__button">Register Nurse</button></a>
+  </div>
+  
   <ul>
   {% for nurse in nurses  %}
     <li class="list__item">
