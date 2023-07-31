@@ -12,7 +12,6 @@ class Pokémon(db.Model):
     trainer = db.Column(UUID(as_uuid=True), db.ForeignKey('Trainers.id'))
     dob = db.Column(db.String(64)) # refactor this later for date - (db.Date)
     treatment_notes = db.Column(db.Text())
-    nurse = db.Column(UUID(as_uuid=True), db.ForeignKey('Nurses.id'))
 
     def __repr__(self):
         return (f"<Nurse: {self.name}, {self.id}>")

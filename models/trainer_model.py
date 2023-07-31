@@ -9,6 +9,7 @@ class Trainer(db.Model):
     id=db.Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     name=db.Column(db.String(64), nullable=False)
     contact=db.Column(db.Text, nullable=False)
+    nurse = db.Column(UUID(as_uuid=True), db.ForeignKey('Nurses.id'))
 
     def __repr__(self):
         return (f"<Trainer: {self.name}, {self.id}>")
