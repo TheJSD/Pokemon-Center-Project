@@ -46,12 +46,8 @@ def add_pokemon():
 @pokémon_blueprint.route("/pokémon/<id>/edit")
 def edit_pokémon(id):
     single_pokémon = Pokémon.query.get(id)
-    nurses= Nurse.query.all()
-    if single_pokémon.nurse != None:
-        assigned_nurse = Nurse.query.get(single_pokémon.nurse)
-    else:
-        assigned_nurse = None
-    return render_template("pokémon/edit_pokémon.jinja", single_pokémon=single_pokémon, nurses=nurses, assigned_nurse=assigned_nurse)
+    trainers = Trainer.query.all()
+    return render_template("pokémon/edit_pokémon.jinja", single_pokémon=single_pokémon, trainers=trainers)
 
 @pokémon_blueprint.route("/pokémon/<id>", methods=["post"])
 def update_pokémon(id):
@@ -59,20 +55,16 @@ def update_pokémon(id):
     species=request.form['species']
     nickname=request.form['nickname']
     dob=request.form['date_of_birth']
-    nurse=request.form['nurse']
-    if nurse == "None":
-        nurse = None
     treatment_notes=request.form['treatment_notes']
-    contact=request.form['contact']
+    trainer=request.form['trainer']
     nickname = empty_returns_null(nickname)
     dob = empty_returns_null(dob)
     treatment_notes = empty_returns_null(treatment_notes)
     single_pokémon.species=species
     single_pokémon.nickname=nickname
     single_pokémon.dob=dob
-    single_pokémon.nurse=nurse
+    single_pokémon.trainer=trainer
     single_pokémon.treatment_notes=treatment_notes
-    single_pokémon.contact=contact
     db.session.commit()
     return redirect (f"/pokémon/{id}")
 
