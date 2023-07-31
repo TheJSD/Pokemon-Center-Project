@@ -21,27 +21,23 @@ def show_pokémon(id):
 
 @pokémon_blueprint.route("/pokémon/new_pokémon")
 def register_pokémon_page():
-    nurses = Nurse.query.all()
-    return render_template("pokémon/new_pokémon.jinja", nurses=nurses)
+    trainers = Trainer.query.filter(Trainer.nurse != None)
+    return render_template("pokémon/new_pokémon.jinja", trainers=trainers)
 
 @pokémon_blueprint.route("/pokémon", methods=["post"])
 def add_pokemon():
     species=request.form['species']
     nickname=request.form['nickname']
     dob=request.form['date_of_birth']
-    nurse=request.form['nurse']
-    if nurse == "None":
-        nurse = None
     treatment_notes=request.form['treatment_notes']
-    contact=request.form['contact']
+    trainer=request.form['trainer']
     nickname = empty_returns_null(nickname)
     dob = empty_returns_null(dob)
     treatment_notes = empty_returns_null(treatment_notes)
     new_pokémon = Pokémon(species=species,
                     nickname=nickname,
                     dob=dob,
-                    nurse=nurse,
-                    contact=contact,
+                    trainer=trainer,
                     treatment_notes=treatment_notes)
     db.session.add(new_pokémon)
     db.session.commit()

@@ -7,7 +7,7 @@
     {{single_pokémon.species}}
   {% endif %}</h1>
     <ul>
-    <li>Contact: {{single_pokémon.contact}}</li>
+    <li>Trainer: <a href="/trainers/{{trainer.id}}">{{trainer.name}}</a></li>
     <li>Date of Birth: {% if single_pokémon.dob == None %}
       Unknown
     {% else %}

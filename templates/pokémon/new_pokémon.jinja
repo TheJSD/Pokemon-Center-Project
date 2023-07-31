@@ -11,19 +11,17 @@
     <li><label for="nickname">Nickname:</label>
     <input type="text" id="nickname" name="nickname"></li>
 
-    <li><label for="contact">Contact:</label>
-    <input type="text", id="contact" name="contact" required></li>
+    <li><label for="trainer">Trainer:</label>
+    <select name="trainer", id="trainer">
+      {% for trainer in trainers %}
+        <option value={{trainer.id}}>{{trainer.name}}</option>
+      {% endfor %}
+    </select></li>
 
     <li><label for="date_of_birth">Date of Birth (DD/MM/YYYY):</label>
     <input type="text" id="date_of_birth" name="date_of_birth"></li>
 
-    <li><label for="nurse">Assigned Nurse:</label>
-    <select name="nurse", id="nurse">
-        <option value="None">None</option>
-      {% for nurse in nurses %}
-        <option value={{nurse.id}}>{{nurse.name}}</option>
-      {% endfor %}
-    </select></li>
+
 
     <li><label for="treatment_notes">Treatment Notes:</label>
     <input type="text" id="treatment_notes" name="treatment_notes"></li>
