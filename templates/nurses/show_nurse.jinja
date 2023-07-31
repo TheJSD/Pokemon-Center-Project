@@ -11,20 +11,17 @@
     <button class="secondary__button">Delete Nurse</button>
     </form>
     </div>
-  <h2 class="title"> Assigned Pokémon:</h2>
-    {% if assigned_pokémon == none %}
-    <p>No pokémon have been assigned to {{nurse.name}}</p>
-    {% endif %}
+  <h2 class="title"> Assigned Trainers:</h2>
+    {% if assigned_trainers == none %}
+    <p>No trainers have been assigned to {{nurse.name}}</p>
+    {% else %}
     <ul>
-    {% for single_pokémon in assigned_pokémon %}
+    {% for trainer in assigned_trainers %}
       <li>
-      {% if single_pokémon.nickname is not none %}
-        <a href="/pokémon/{{single_pokémon.id}}">{{single_pokémon.nickname}} ({{single_pokémon.species}})</a>
-        {%else%}
-        <a href="/pokémon/{{single_pokémon.id}}">{{single_pokémon.species}}</a>
-      {% endif %}
+        <a href="/pokémon/{{trainer.id}}">{{trainer.name}}</a>
       </li>
     {% endfor %}
+    {% endif %}
     </ul>
 </div>
 {% endblock content %}
