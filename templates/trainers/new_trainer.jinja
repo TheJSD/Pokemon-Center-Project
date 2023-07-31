@@ -1,0 +1,28 @@
+{% extends 'base.jinja' %}
+{% block content %}
+<div class="container">
+
+  <h1 class="title">Register a new Trainer</h1>
+
+  
+  <form action="/trainers" method="POST">
+  <ul>
+    <li><label for="name">Name:</label>
+    <input type="text" id="name" name="name" required></li>
+
+    <li><label for="contact">Contact:</label>
+    <input type="text", id="contact" name="contact" required></li>
+
+    <li><label for="nurse">Assigned Nurse:</label>
+    <select name="nurse", id="nurse">
+        <option value="None">None</option>
+      {% for nurse in nurses %}
+        <option value={{nurse.id}}>{{nurse.name}}</option>
+      {% endfor %}
+    </select></li>
+
+    <button class="primary__button" type="submit">Register Trainer</button>
+  </ul>
+  </form>
+</div>
+{% endblock content %}

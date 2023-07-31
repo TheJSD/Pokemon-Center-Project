@@ -1,7 +1,12 @@
 {% extends 'base.jinja' %}
 {% block content %}
   <div class="container">
-  <h1 class="title">Trainers:</h1>
+    <div class="title_and_button">
+      <h1 class="title">Trainers:</h1>
+      <a href="trainers/new"><button class="primary__button">Register Trainer</button></a>
+    </div>
+
+
   <ul>
     
   {% for trainer in trainers  %}
