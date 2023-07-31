@@ -1,9 +1,33 @@
+/* global */
+
 * {
   padding: 0px;
   margin: 0px;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .container {
-  max-width: 1000px;
+  max-width: 1200px;
+  
   margin: 0 auto;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+/* base.jinja */
+
+.navbar__background {
+  background-color: rgb(211, 23, 23);
+}
+
+.navbar__items {
+  font-size: 1.2rem;
+}
+
+.navbar__items > a {
+  color: white;
 }

@@ -7,16 +7,21 @@
   <title>{{ title }}</title>
 </head>
 <body>
-  <nav>
-  <a href="/">Home</a>
-  <a href="/pokémon">Pokémon</a>
-  <a href="/pokémon/new_pokémon">Register Pokémon</a>
-  <a href="/nurses">Nurses</a>
-  <a href="/nurses/new">Register Nurse</a>
-  </nav>
+<div class="navbar__background">
+    <div class="container">
+    <nav class="navbar__items">
+      <img src="/static/images/Poké_Ball_icon.png" height="20px">
+      <a href="/">Home</a>
+      <a href="/pokémon">Pokémon</a>
+      <a href="/pokémon/new_pokémon">Register Pokémon</a>
+      <a href="/nurses">Nurses</a>
+      <a href="/nurses/new">Register Nurse</a>
+    </nav>
+  </div></div>
 
   {% block content %}
     
   {% endblock content %}
+
 </body>
 </html>
