@@ -10,7 +10,7 @@ class Pokémon(db.Model):
     species = db.Column(db.String(64), nullable=False)
     nickname = db.Column(db.String(64))
     contact = db.Column(db.String(64), nullable=False)
-    dob = db.Column(db.String(64)) # refactor this later for date - (db.Date)
+    dob = db.Column(UUID(as_uuid=True), db.ForeignKey('Trainers.id'))
     treatment_notes = db.Column(db.Text())
     nurse = db.Column(UUID(as_uuid=True), db.ForeignKey('Nurses.id'))
 
