@@ -5,7 +5,7 @@
   <ul>
     
   {% for single_pokémon in pokémon  %}
-    <li>
+    <li class="list__item">
     {% if single_pokémon.nickname is not none %}
         <ul>
           <li><a href="/pokémon/{{single_pokémon.id}}">Name: {{single_pokémon.nickname}}</a></li>
