@@ -15,8 +15,9 @@ def pokémon():
 @pokémon_blueprint.route("/pokémon/<id>")
 def show_pokémon(id):
     single_pokémon = Pokémon.query.get(id)
-    nurse = Nurse.query.get(single_pokémon.nurse)
-    return render_template("pokémon/show_pokémon.jinja", single_pokémon=single_pokémon, nurse=nurse)
+    trainer = Trainer.query.get(single_pokémon.trainer)
+    nurse = Nurse.query.get(trainer.nurse)
+    return render_template("pokémon/show_pokémon.jinja", single_pokémon=single_pokémon, trainer=trainer, nurse=nurse)
 
 @pokémon_blueprint.route("/pokémon/new_pokémon")
 def register_pokémon_page():

@@ -17,7 +17,7 @@
 
     <h2 class="title">Treatment:</h2>
     <p>Assigned Nurse:
-    {% if single_pokémon.nurse is not none %}
+    {% if nurse is not none %}
       <a href="/nurses/{{nurse.id}}">{{nurse.name}}</a>
     {% else %}
       This Pokémon has not been assigned a nurse
