@@ -1,6 +1,7 @@
 .edit_del__buttons {
   display: flex;
   gap: 0.5rem;
+  padding: 10px 0px;
 }
 
 .primary__button {
