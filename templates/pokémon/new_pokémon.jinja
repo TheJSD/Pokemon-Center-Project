@@ -1,7 +1,7 @@
 {% extends 'base.jinja' %}
 {% block content %}
 <div class="container">
-  <h1>Register a new Pokémon:</h1>
+  <h1 class="title">Register a new Pokémon:</h1>
   
   <form action="/pokémon" method="POST">
   <ul>
@@ -28,7 +28,7 @@
     <li><label for="treatment_notes">Treatment Notes:</label>
     <input type="text" id="treatment_notes" name="treatment_notes"></li>
 
-    <button type="submit">Register Pokémon</button>
+    <button class="primary__button" type="submit">Register Pokémon</button>
   </ul>
   </form>
 </div>

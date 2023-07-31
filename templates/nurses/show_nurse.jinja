@@ -5,9 +5,10 @@
   <h1 class="title">{{nurse.name}}</h1>
   
     <div class="edit_del__buttons">
-    <a href="{{nurse.id}}/edit"><button>Edit Details</button></a>
+    <a href="{{nurse.id}}/edit">
+    <button class="primary__button">Edit Details</button></a>
     <form action="{{nurse.id}}/delete" method="post">
-    <button>Delete Nurse</button>
+    <button class="secondary__button">Delete Nurse</button>
     </form>
     </div>
   <h2 class="title"> Assigned Pokémon:</h2>
