@@ -18,7 +18,11 @@
           <li><a href="/pokémon/{{single_pokémon.id}}">Name: {{single_pokémon.species}}</a></li>
           
     {% endif %}
-            <li>Contact: {{single_pokémon.contact}}</li>
+            <li>Trainer: {% for trainer in trainers %}
+              {% if single_pokémon.trainer == trainer.id %}
+                {{trainer.name}}
+              {% endif %}
+            {% endfor %}</li>
           </ul>
         </li>
   {% endfor %}

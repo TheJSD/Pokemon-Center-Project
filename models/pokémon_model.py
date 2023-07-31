@@ -14,7 +14,7 @@ class Pokémon(db.Model):
     treatment_notes = db.Column(db.Text())
 
     def __repr__(self):
-        return (f"<Nurse: {self.name}, {self.id}>")
+        return (f"<Pokémon: {self.species}, {self.id}>")
     
 
 

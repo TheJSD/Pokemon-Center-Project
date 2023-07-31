@@ -1,6 +1,7 @@
 from flask import Flask, Blueprint, render_template, request, redirect
 from models.pokémon_model import Pokémon, empty_returns_null
 from models.nurse_model import Nurse
+from models.trainer_model import Trainer
 from app import db
 
 pokémon_blueprint = Blueprint("pokémon", __name__)
@@ -8,7 +9,8 @@ pokémon_blueprint = Blueprint("pokémon", __name__)
 @pokémon_blueprint.route("/pokémon")
 def pokémon():
     pokémon = Pokémon.query.all()
-    return render_template("pokémon/index.jinja", pokémon=pokémon)
+    trainers = Trainer.query.all()
+    return render_template("pokémon/index.jinja", pokémon=pokémon, trainers=trainers)
 
 @pokémon_blueprint.route("/pokémon/<id>")
 def show_pokémon(id):
