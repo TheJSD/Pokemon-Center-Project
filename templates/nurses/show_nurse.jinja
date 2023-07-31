@@ -12,7 +12,7 @@
     </form>
     </div>
   <h2 class="title"> Assigned Trainers:</h2>
-    {% if assigned_trainers is not none %}
+    {% if assigned_trainers|length >= 1 %}
     <ul>
       {% for trainer in assigned_trainers %}
         <li>
@@ -21,7 +21,7 @@
       {% endfor %}
     </ul>
     {% else %}
-    <p>No trainers have been assigned to {{nurse.name}}</p>
+    <p>No trainers have been assigned to {{nurse.name}}.</p>
     {% endif %}
 </div>
 {% endblock content %}

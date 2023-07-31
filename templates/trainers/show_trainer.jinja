@@ -23,7 +23,7 @@
 
 
   <h2 class="title"> {{trainer.name}}'s Pokémon:</h2>
-    {% if assigned_pokémon == none %}
+    {% if assigned_pokémon == [] %} {#checking if the list is empty#}
     <p>No pokémon have been assigned to {{trainer.name}}</p>
     {% endif %}
     <ul>

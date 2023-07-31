@@ -27,7 +27,7 @@ def add_nurse():
 @nurses_blueprint.route("/nurses/<id>")
 def show_nurse(id):
     nurse = Nurse.query.get(id)
-    assigned_trainers = Trainer.query.filter_by(nurse = id)
+    assigned_trainers = Trainer.query.filter_by(nurse = id).all()
     return render_template("nurses/show_nurse.jinja", nurse=nurse, assigned_trainers=assigned_trainers)
 
 @nurses_blueprint.route("/nurses/<id>/edit")
