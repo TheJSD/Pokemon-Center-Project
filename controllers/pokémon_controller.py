@@ -15,8 +15,12 @@ def pokémon():
 @pokémon_blueprint.route("/pokémon/<id>")
 def show_pokémon(id):
     single_pokémon = Pokémon.query.get(id)
-    trainer = Trainer.query.get(single_pokémon.trainer)
-    nurse = Nurse.query.get(trainer.nurse)
+    if single_pokémon.trainer != None:
+        trainer = Trainer.query.get(single_pokémon.trainer)
+        nurse = Nurse.query.get(trainer.nurse)
+    else:
+        trainer=None
+        nurse=None
     return render_template("pokémon/show_pokémon.jinja", single_pokémon=single_pokémon, trainer=trainer, nurse=nurse)
 
 @pokémon_blueprint.route("/pokémon/new_pokémon")

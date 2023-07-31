@@ -24,7 +24,7 @@
             <li>Trainer: {% for trainer in trainers %}
               {% if single_pokémon.trainer == trainer.id %}
                 {{trainer.name}}
-              {% endif %}
+                {% endif %}
             {% endfor %}</li>
           </ul>
         </li>

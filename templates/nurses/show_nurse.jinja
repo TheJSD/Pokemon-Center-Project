@@ -12,16 +12,16 @@
     </form>
     </div>
   <h2 class="title"> Assigned Trainers:</h2>
-    {% if assigned_trainers == none %}
-    <p>No trainers have been assigned to {{nurse.name}}</p>
-    {% else %}
+    {% if assigned_trainers is not none %}
     <ul>
-    {% for trainer in assigned_trainers %}
-      <li>
-        <a href="/pokémon/{{trainer.id}}">{{trainer.name}}</a>
-      </li>
-    {% endfor %}
-    {% endif %}
+      {% for trainer in assigned_trainers %}
+        <li>
+          <a href="/pokémon/{{trainer.id}}">{{trainer.name}}</a>
+        </li>
+      {% endfor %}
     </ul>
+    {% else %}
+    <p>No trainers have been assigned to {{nurse.name}}</p>
+    {% endif %}
 </div>
 {% endblock content %}
