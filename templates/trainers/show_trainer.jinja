@@ -1,0 +1,35 @@
+{% extends 'base.jinja' %}
+{% block content %}
+
+<div class="container">
+  <h1 class="title">{{trainer.name}}</h1>
+
+      Nurse: {{nurse.name}}
+  
+    <div class="edit_del__buttons">
+    <a href="{{trainer.id}}/edit">
+    <button class="primary__button">Edit Details</button></a>
+    <form action="{{trainer.id}}/delete" method="post">
+    <button class="secondary__button">Delete Trainer</button>
+    </form>
+    </div>
+
+
+
+  <h2 class="title"> {{trainer.name}}'s Pokémon:</h2>
+    {% if assigned_pokémon == none %}
+    <p>No pokémon have been assigned to {{trainer.name}}</p>
+    {% endif %}
+    <ul>
+    {% for single_pokémon in assigned_pokémon %}
+      <li>
+      {% if single_pokémon.nickname is not none %}
+        <a href="/pokémon/{{single_pokémon.id}}">{{single_pokémon.nickname}} ({{single_pokémon.species}})</a>
+        {%else%}
+        <a href="/pokémon/{{single_pokémon.id}}">{{single_pokémon.species}}</a>
+      {% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+</div>
+{% endblock content %}

@@ -13,9 +13,11 @@ app.cli.add_command(seed)
 
 from controllers.pokémon_controller import pokémon_blueprint
 from controllers.nurse_controller import nurses_blueprint
+from controllers.trainer_controller import trainers_blueprint
 
 app.register_blueprint(pokémon_blueprint)
 app.register_blueprint(nurses_blueprint)
+app.register_blueprint(trainers_blueprint)
 
 @app.route("/")
 def home():

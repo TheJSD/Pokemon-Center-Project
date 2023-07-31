@@ -1,0 +1,14 @@
+{% extends 'base.jinja' %}
+{% block content %}
+  <div class="container">
+  <h1 class="title">Trainers:</h1>
+  <ul>
+    
+  {% for trainer in trainers  %}
+    <li class="list__item">
+    <a href="/trainers/{{trainer.id}}">{{trainer.name}}</a>
+    </li>
+  {% endfor %}
+  </ul>
+  </div>
+{% endblock content %}
