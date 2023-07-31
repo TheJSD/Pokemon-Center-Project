@@ -7,7 +7,7 @@
       <li>Nurse: {% if nurse == none %}
         There is no nurse assigned to {{trainer.name}} (and they cannot add anymore Pokémon).
       {% else %}
-        {{nurse.name}}
+        <a href="/nurses/{{nurse.id}}">{{nurse.name}}</a>
       {% endif %}</li>
       <li>Contact: {{trainer.contact}}</li>
     </ul>
