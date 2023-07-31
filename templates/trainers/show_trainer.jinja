@@ -4,7 +4,11 @@
 <div class="container">
   <h1 class="title">{{trainer.name}}</h1>
 
-      Nurse: {{nurse.name}}
+      Nurse: {% if nurse == none %}
+        There is no nurse assigned to {{trainer.name}}.
+      {% else %}
+        {{nurse.name}}
+      {% endif %}
   
     <div class="edit_del__buttons">
     <a href="{{trainer.id}}/edit">

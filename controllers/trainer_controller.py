@@ -15,5 +15,7 @@ def trainers():
 def show_trainer(id):
     trainer = Trainer.query.get(id)
     nurse = Nurse.query.get(trainer.nurse)
+    nurse = empty_returns_null(nurse)
     assigned_pokémon = Pokémon.query.filter_by(trainer = id)
+    assigned_pokémon = empty_returns_null(assigned_pokémon)
     return render_template("/trainers/show_trainer.jinja", trainer = trainer, nurse=nurse, assigned_pokémon=assigned_pokémon)
