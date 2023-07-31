@@ -1,11 +1,11 @@
 {% extends 'base.jinja' %}
 {% block content %}
   <div class="container">
-  {% if single_pokémon.nickname is not none %}
-    <h1>{{single_pokémon.nickname}} ({{single_pokémon.species}})</h1>
+  <h1 class="title">{% if single_pokémon.nickname is not none %}
+    {{single_pokémon.nickname}} ({{single_pokémon.species}})
   {% else %}
-    <h1>{{single_pokémon.species}}</h1>
-  {% endif %}
+    {{single_pokémon.species}}
+  {% endif %}</h1>
     <ul>
     <li>Contact: {{single_pokémon.contact}}</li>
     <li>Date of Birth: {% if single_pokémon.dob == None %}
@@ -15,7 +15,7 @@
     {% endif %}</li>
     </ul>
 
-    <h2>Treatment:</h2>
+    <h2 class="title">Treatment:</h2>
     <p>Assigned Nurse:
     {% if single_pokémon.nurse is not none %}
       <a href="/nurses/{{nurse.id}}">{{nurse.name}}</a>
@@ -28,9 +28,11 @@
       <p>{{single_pokémon.treatment_notes}}</p>
     {% endif %}
     
+    <div class="edit_del__buttons">
     <a href="{{single_pokémon.id}}/edit"><button>Edit Pokémon</button></a>
     <form action="{{single_pokémon.id}}/delete" method="post">
     <button>Delete Pokémon</button>
+    </div>
     </form>
     </div>
 {% endblock content %}

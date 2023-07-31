@@ -1,14 +1,19 @@
 {% extends 'base.jinja' %}
 {% block content %}
-  <h1>{{nurse.name}}</h1>
-  
-  Todo: Show all pokemon assigned to a nurse.
 
+<div class="container">
+  <h1 class="title">{{nurse.name}}</h1>
+  
+    <div class="edit_del__buttons">
     <a href="{{nurse.id}}/edit"><button>Edit Details</button></a>
     <form action="{{nurse.id}}/delete" method="post">
     <button>Delete Nurse</button>
     </form>
-  <h2> Assigned Pokémon:</h2>
+    </div>
+  <h2 class="title"> Assigned Pokémon:</h2>
+    {% if assigned_pokémon == none %}
+    <p>No pokémon have been assigned to {{nurse.name}}</p>
+    {% endif %}
     <ul>
     {% for single_pokémon in assigned_pokémon %}
       <li>
@@ -20,4 +25,5 @@
       </li>
     {% endfor %}
     </ul>
+</div>
 {% endblock content %}

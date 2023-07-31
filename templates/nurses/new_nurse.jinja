@@ -1,12 +1,15 @@
 {% extends 'base.jinja' %}
 {% block content %}
-  <h1>Register a new Nurse:</h1>
-  
+<div class="container">
+  <h1 class="title">Register a new Nurse:</h1>
+  <ul>
   <form action="/nurses" method="POST">
 
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
+    <li><label for="name">Name:</label>
+    <input type="text" id="name" name="name" required></li>
 
     <button type="submit">Register Nurse</button>
   </form>
+  </ul>
+</div>
 {% endblock content %}

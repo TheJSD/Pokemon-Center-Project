@@ -1,9 +1,11 @@
 {% extends 'base.jinja' %}
 {% block content %}
-  <h1>Nurses:</h1>
+<div class="container">
+  <h1 class="title">Nurses:</h1>
   <ul>
   {% for nurse in nurses  %}
     <li><a href="/nurses/{{nurse.id}}">{{nurse.name}}</a></li>
   {% endfor %}
   </ul>
+</div>
 {% endblock content %}

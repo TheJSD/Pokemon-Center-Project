@@ -16,6 +16,10 @@ body {
   /* height: 3rem; */
 }
 
+.title {
+  padding: 0.5rem 0rem;
+}
+
 /* base.jinja */
 
 .navbar__background {
