@@ -36,3 +36,35 @@ def add_trainer():
     db.session.add(new_trainer)
     db.session.commit()
     return redirect("/trainers")
+
+@trainers_blueprint.route("/trainers/<id>/delete", methods = ["post"])
+def delete_trainer(id):
+    trainer = Trainer.query.get(id)
+    assigned_pokémon = Pokémon.query.filter_by(trainer = id)
+    for single_pokémon in assigned_pokémon:
+        single_pokémon.trainer = None
+    db.session.delete(trainer)
+    db.session.commit()
+    return redirect("/trainers")
+
+@trainers_blueprint.route("/trainers/<id>/edit")
+def edit_trainer_page(id):
+    trainer = Trainer.query.get(id)
+    nurses = Nurse.query.all()
+    if trainer.nurse != None:
+      assigned_nurse = Nurse.query.get(trainer.nurse)
+    else:
+      assigned_nurse = None
+    return render_template("trainers/edit_trainer.jinja", trainer=trainer, assigned_nurse=assigned_nurse, nurses=nurses)
+
+@trainers_blueprint.route("/trainers/<id>", methods=["post"])
+def update_trainer(id):
+    trainer = Trainer.query.get(id)
+    trainer.name = request.form['name']
+    trainer.contact = request.form['contact']
+    nurse = request.form['nurse']
+    if nurse == "None":
+        nurse = None
+    trainer.nurse = nurse
+    db.session.commit()
+    return redirect("/trainers")
