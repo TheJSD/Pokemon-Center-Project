@@ -1,38 +1,39 @@
 {% extends 'base.jinja' %}
 {% block content %}
+  <div class="container">
   {% if single_pokémon.nickname != None %}
     <h1>Update {{single_pokémon.nickname}} ({{single_pokémon.species}})</h1>
   {% else %}
     <h1>Update {{single_pokémon.species}}</h1>
   {% endif %}
-  
-  <h1>Register a new Pokémon:</h1>
-  
+  <ul>
   <form action="/pokémon/{{single_pokémon.id}}" method="POST">
 
-    <label for="species">Pokémon Species:</label>
-    <input type="text" id="species" name="species" value="{{single_pokémon.species}}" required>
+    <li><label for="species">Pokémon Species:</label>
+    <input type="text" id="species" name="species" value="{{single_pokémon.species}}" required></li>
 
-    <label for="nickname">Nickname:</label>
-    <input type="text" id="nickname" name="nickname" {% if single_pokémon.nickname != None %}Value="{{single_pokémon.nickname}}"{% endif %}>
+    <li><label for="nickname">Nickname:</label>
+    <input type="text" id="nickname" name="nickname" {% if single_pokémon.nickname != None %}Value="{{single_pokémon.nickname}}"{% endif %}></li>
 
-    <label for="contact">Contact:</label>
-    <input type="text", id="contact" name="contact" value={{single_pokémon.contact}} required>
+    <li><label for="contact">Contact:</label>
+    <input type="text", id="contact" name="contact" value={{single_pokémon.contact}} required></li>
 
-    <label for="date_of_birth">Date of Birth (DD/MM/YYYY):</label>
-    <input type="text" id="date_of_birth" name="date_of_birth" {% if single_pokémon.dob != None %}Value="{{single_pokémon.dob}}"{% endif %}>
+    <li><label for="date_of_birth">Date of Birth (DD/MM/YYYY):</label>
+    <input type="text" id="date_of_birth" name="date_of_birth" {% if single_pokémon.dob != None %}Value="{{single_pokémon.dob}}"{% endif %}></li>
 
-    <label for="nurse">Assigned Nurse:</label>
+    <li><label for="nurse">Assigned Nurse:</label>
     <select name="nurse", id="nurse">
         <option value="None">None</option>
       {% for nurse in nurses %}
         <option value={{nurse.id}} {% if assigned_nurse.name == nurse.name %}selected{% endif %}>{{nurse.name}}</option>
       {% endfor %}
-    </select>
+    </select></li>
 
-    <label for="treatment_notes">Treatment Notes:</label>
-    <input type="text" id="treatment_notes" name="treatment_notes" {% if single_pokémon.treatment_notes !=None %}value="{{single_pokémon.treatment_notes}}">{% endif %}>
+    <li><label for="treatment_notes">Treatment Notes:</label>
+    <input type="text" id="treatment_notes" name="treatment_notes" {% if single_pokémon.treatment_notes !=None %}value="{{single_pokémon.treatment_notes}}">{% endif %}></li>
     
     <button type="submit">Update Pokémon</button>
   </form>
+  </ul>
+  </div>
 {% endblock content %}

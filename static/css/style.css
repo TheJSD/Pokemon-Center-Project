@@ -11,17 +11,19 @@ body {
 
 .container {
   max-width: 1200px;
-  
+  width: 100%;
   margin: 0 auto;
-  height: 3rem;
-  display: flex;
-  align-items: center;
+  /* height: 3rem; */
 }
 
 /* base.jinja */
 
 .navbar__background {
   background-color: rgb(211, 23, 23);
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }
 
 .navbar__items {
@@ -30,4 +32,10 @@ body {
 
 .navbar__items > a {
   color: white;
+}
+
+/* index.jinja */
+
+.welcome {
+  padding: 1rem 0rem;
 }

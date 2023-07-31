@@ -1,25 +1,27 @@
 {% extends 'base.jinja' %}
 {% block content %}
+  <div class="container">
   <h1>Pokémon:</h1>
   <ul>
+    
   {% for single_pokémon in pokémon  %}
+    <li>
     {% if single_pokémon.nickname is not none %}
-      <li>
         <ul>
           <li><a href="/pokémon/{{single_pokémon.id}}">Name: {{single_pokémon.nickname}}</a></li>
           <li>Species: {{single_pokémon.species}}</li>
         
       
-      {% else %}
-        <li>
-          <ul>
-            <li><a href="/pokémon/{{single_pokémon.id}}">Name: {{single_pokémon.species}}</a></li>
-          
+    {% else %}
         
-      {% endif %}
+        <ul>
+          <li><a href="/pokémon/{{single_pokémon.id}}">Name: {{single_pokémon.species}}</a></li>
+          
+    {% endif %}
             <li>Contact: {{single_pokémon.contact}}</li>
           </ul>
         </li>
   {% endfor %}
   </ul>
+  </div>
 {% endblock content %}
