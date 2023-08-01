@@ -9,7 +9,7 @@
     <input list="pokédexentries" id="species" name="species" required placeholder="Search">
     <datalist id="pokédexentries">
     {% for entry in pokédex %}
-      <option data-value="{{entry.id}}">#{{entry.id}}: {{entry.name}}</option>
+      <option data-value="{{entry.id}}">#{{entry.id}}: {{entry.name|capitalize}}</option>
     {% endfor %}
     </datalist>
     </li>

@@ -2,7 +2,7 @@ from flask import Flask, Blueprint, render_template, request, redirect
 from models.pokémon_model import Pokémon, empty_returns_null
 from models.nurse_model import Nurse
 from models.trainer_model import Trainer
-from models.pokédex_model import Pokédex
+from models.pokédex_model import Pokédex, id_from_string
 from app import db
 
 pokémon_blueprint = Blueprint("pokémon", __name__)
@@ -32,6 +32,7 @@ def register_pokémon_page():
 @pokémon_blueprint.route("/pokémon", methods=["post"])
 def add_pokemon():
     species=request.form['species']
+    species=id_from_string(species)
     nickname=request.form['nickname']
     dob=request.form['date_of_birth']
     treatment_notes=request.form['treatment_notes']

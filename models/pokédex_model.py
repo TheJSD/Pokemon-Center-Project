@@ -11,3 +11,16 @@ class Pokédex(db.Model):
 
     def __repr__(self):
         return (f"Pokédex Entry #{self.id}, {self.name}")
+    
+
+import re
+
+def id_from_string(string):
+    id = ""
+    resultlist = [letter for letter in string]
+    for letter in resultlist:
+        match = re.match("[0-9]", letter)
+        if match:
+          id += letter
+        if letter == ":":
+            return int(id)
