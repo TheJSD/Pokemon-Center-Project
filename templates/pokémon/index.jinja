@@ -11,21 +11,22 @@
     <li class="list__item">
     {% if single_pokémon.nickname is not none %}
         <ul>
-          <li><a href="/pokémon/{{single_pokémon.id}}">Name: {{single_pokémon.nickname}}</a></li>
-          <li>Species: {{single_pokémon.species}}</li>
+          <li><a href="/pokémon/{{single_pokémon.id}}">Name: {{single_pokémon.nickname|capitalize}}</a></li>
+          <li>Species: {{single_pokémon.dex.name}}</li>
         
       
     {% else %}
         
         <ul>
-          <li><a href="/pokémon/{{single_pokémon.id}}">Name: {{single_pokémon.species}}</a></li>
+          <li><a href="/pokémon/{{single_pokémon.id}}">Name: {{single_pokémon.dex.name|capitalize}}</a></li>
           
     {% endif %}
-            <li>Trainer: {% for trainer in trainers %}
-              {% if single_pokémon.trainer == trainer.id %}
-                {{trainer.name}}
-                {% endif %}
-            {% endfor %}</li>
+            <li>Trainer: {% if single_pokémon.trainer != None %}
+              {{single_pokémon.owner.name}}
+              {% else %}
+              THIS POKÉMON HAS NO ASSIGNED TRAINER!
+            {% endif %}
+            </li>
           </ul>
         </li>
   {% endfor %}

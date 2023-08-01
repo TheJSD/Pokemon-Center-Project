@@ -9,8 +9,7 @@ pokémon_blueprint = Blueprint("pokémon", __name__)
 @pokémon_blueprint.route("/pokémon")
 def pokémon():
     pokémon = Pokémon.query.all()
-    trainers = Trainer.query.all()
-    return render_template("pokémon/index.jinja", pokémon=pokémon, trainers=trainers)
+    return render_template("pokémon/index.jinja", pokémon=pokémon)
 
 @pokémon_blueprint.route("/pokémon/<id>")
 def show_pokémon(id):
