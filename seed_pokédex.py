@@ -21,6 +21,8 @@ def seed_pokedex():
         new_entry = Pokédex(id=data['id'], name=data['species']['name'])
         db.session.add(new_entry)
         db.session.commit()
-        log = open('pokédex_backup.py', 'a')
-        log.write(f"pokédexentry{data['id']} = Pokédex(id='{data['id']}', name='{data['species']['name']}')\n")
-        log.close()
+        ### Files below writes the desired data into another file
+        ### Comment out if you do not want it to write
+        # log = open('pokédex_backup.py', 'a')
+        # log.write(f"pokédexentry{data['id']} = Pokédex(id='{data['id']}', name='{data['species']['name']}')\n")
+        # log.close()

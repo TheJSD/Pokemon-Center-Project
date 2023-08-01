@@ -29,10 +29,10 @@ def seed():
     db.session.add(trainer4)
     db.session.commit()
 
-    pokémon1=Pokémon(species="Pikachu", trainer=trainer1.id, dob="12/9/1998")
-    pokémon2=Pokémon(species="Onyx", trainer=trainer2.id)
-    pokémon3=Pokémon(species="Staryu", trainer=trainer3.id)
-    pokémon4=Pokémon(species="Geodude", nickname="Rocky", trainer=trainer4.id)
+    pokémon1=Pokémon(species="25", trainer=trainer1.id, dob="12/9/1998")
+    pokémon2=Pokémon(species="95", trainer=trainer2.id)
+    pokémon3=Pokémon(species="120", trainer=trainer3.id)
+    pokémon4=Pokémon(species="74", nickname="Rocky", trainer=trainer4.id)
 
     db.session.add(nurse1)
     db.session.add(nurse2)

@@ -1,3 +1,5 @@
+from models.pokédex_model import Pokédex
+
 pokédexentry1 = Pokédex(id='1', name='bulbasaur')
 pokédexentry2 = Pokédex(id='2', name='ivysaur')
 pokédexentry3 = Pokédex(id='3', name='venusaur')
