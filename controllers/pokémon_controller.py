@@ -2,6 +2,7 @@ from flask import Flask, Blueprint, render_template, request, redirect
 from models.pokémon_model import Pokémon, empty_returns_null
 from models.nurse_model import Nurse
 from models.trainer_model import Trainer
+from models.pokédex_model import Pokédex
 from app import db
 
 pokémon_blueprint = Blueprint("pokémon", __name__)
@@ -25,7 +26,8 @@ def show_pokémon(id):
 @pokémon_blueprint.route("/pokémon/new_pokémon")
 def register_pokémon_page():
     trainers = Trainer.query.filter(Trainer.nurse != None)
-    return render_template("pokémon/new_pokémon.jinja", trainers=trainers)
+    pokédex = Pokédex.query.all()
+    return render_template("pokémon/new_pokémon.jinja", trainers=trainers, pokédex=pokédex)
 
 @pokémon_blueprint.route("/pokémon", methods=["post"])
 def add_pokemon():

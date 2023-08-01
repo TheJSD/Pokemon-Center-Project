@@ -2,9 +2,9 @@
 {% block content %}
   <div class="container">
   <h1 class="title">{% if single_pokémon.nickname is not none %}
-    {{single_pokémon.nickname}} ({{single_pokémon.species}})
+    {{single_pokémon.nickname}} ({{single_pokémon.dex.name|capitalize}})
   {% else %}
-    {{single_pokémon.species}}
+    {{single_pokémon.dex.name|capitalize}}
   {% endif %}</h1>
     <ul>
     <li>Trainer: <a href="/trainers/{{trainer.id}}">{{trainer.name}}</a>
