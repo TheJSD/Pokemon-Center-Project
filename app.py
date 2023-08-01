@@ -10,6 +10,8 @@ db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 from seed import seed
 app.cli.add_command(seed)
+from seed_pokédex import seed_pokedex
+app.cli.add_command(seed_pokedex)
 
 from controllers.pokémon_controller import pokémon_blueprint
 from controllers.nurse_controller import nurses_blueprint
