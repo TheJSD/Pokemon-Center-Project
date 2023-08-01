@@ -7,7 +7,7 @@ class Pokémon(db.Model):
     __tablename__ = "Pokémon"
 
     id=db.Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    species = db.Column(db.String(64), nullable=False)
+    species = db.Column(db.Integer, db.ForeignKey('Pokédex.id'), nullable=False)
     nickname = db.Column(db.String(64))
     trainer = db.Column(UUID(as_uuid=True), db.ForeignKey('Trainers.id'))
     dob = db.Column(db.String(64)) # refactor this later for date - (db.Date)

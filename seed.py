@@ -2,6 +2,7 @@ from app import db
 from models.nurse_model import Nurse
 from models.pokémon_model import Pokémon
 from models.trainer_model import Trainer
+from models.pokédex_model import Pokédex
 import click
 
 from flask.cli import with_appcontext
