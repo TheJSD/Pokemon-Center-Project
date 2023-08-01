@@ -2,16 +2,23 @@
 {% block content %}
   <div class="container">
   {% if single_pokémon.nickname != None %}
-    <h1>Update {{single_pokémon.nickname}} ({{single_pokémon.species}})</h1>
+    <h1>Update {{single_pokémon.nickname}} ({{single_pokémon.dex.name|capitalize}})</h1>
   {% else %}
-    <h1>Update {{single_pokémon.species}}</h1>
+    <h1>Update {{single_pokémon.dex.name|capitalize}}</h1>
   {% endif %}
   <ul>
   <form action="/pokémon/{{single_pokémon.id}}" method="POST">
 
     <li><label for="species">Pokémon Species:</label>
-    <input type="text" id="species" name="species" value="{{single_pokémon.species}}" required></li>
-
+    <input list="pokédexentries" id="species" name="species" required value="#{{single_pokémon.dex.id}}: {{single_pokémon.dex.name|capitalize}}">
+    <datalist id="pokédexentries">
+    {% for entry in pokédex %}
+      <option {% if single_pokémon.dex.id == entry.id %}
+        {% endif %}>#{{entry.id}}: {{entry.name|capitalize}}</option>
+    {% endfor %}
+    </datalist>
+    </li>
+    
     <li><label for="nickname">Nickname:</label>
     <input type="text" id="nickname" name="nickname" {% if single_pokémon.nickname != None %}Value="{{single_pokémon.nickname}}"{% endif %}></li>
 

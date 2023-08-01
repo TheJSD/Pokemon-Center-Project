@@ -10,7 +10,7 @@ pokémon_blueprint = Blueprint("pokémon", __name__)
 @pokémon_blueprint.route("/pokémon")
 def pokémon():
     pokémon = Pokémon.query.all()
-    return render_template("pokémon/index.jinja", pokémon=pokémon)
+    return render_template("pokémon/index.jinja", pokémon=pokémon, title="Pokémon")
 
 @pokémon_blueprint.route("/pokémon/<id>")
 def show_pokémon(id):
@@ -53,12 +53,14 @@ def add_pokemon():
 def edit_pokémon(id):
     single_pokémon = Pokémon.query.get(id)
     trainers = Trainer.query.all()
-    return render_template("pokémon/edit_pokémon.jinja", single_pokémon=single_pokémon, trainers=trainers)
+    pokédex = Pokédex.query.all()
+    return render_template("pokémon/edit_pokémon.jinja", single_pokémon=single_pokémon, trainers=trainers, pokédex=pokédex)
 
 @pokémon_blueprint.route("/pokémon/<id>", methods=["post"])
 def update_pokémon(id):
     single_pokémon = Pokémon.query.get(id)
     species=request.form['species']
+    species=id_from_string(species)
     nickname=request.form['nickname']
     dob=request.form['date_of_birth']
     treatment_notes=request.form['treatment_notes']
