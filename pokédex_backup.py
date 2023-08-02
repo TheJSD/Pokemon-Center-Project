@@ -1,1012 +1,1017 @@
+from app import db
 from models.pokédex_model import Pokédex
 
-pokédexentry1 = Pokédex(id='1', name='bulbasaur')
-pokédexentry2 = Pokédex(id='2', name='ivysaur')
-pokédexentry3 = Pokédex(id='3', name='venusaur')
-pokédexentry4 = Pokédex(id='4', name='charmander')
-pokédexentry5 = Pokédex(id='5', name='charmeleon')
-pokédexentry6 = Pokédex(id='6', name='charizard')
-pokédexentry7 = Pokédex(id='7', name='squirtle')
-pokédexentry8 = Pokédex(id='8', name='wartortle')
-pokédexentry9 = Pokédex(id='9', name='blastoise')
-pokédexentry10 = Pokédex(id='10', name='caterpie')
-pokédexentry11 = Pokédex(id='11', name='metapod')
-pokédexentry12 = Pokédex(id='12', name='butterfree')
-pokédexentry13 = Pokédex(id='13', name='weedle')
-pokédexentry14 = Pokédex(id='14', name='kakuna')
-pokédexentry15 = Pokédex(id='15', name='beedrill')
-pokédexentry16 = Pokédex(id='16', name='pidgey')
-pokédexentry17 = Pokédex(id='17', name='pidgeotto')
-pokédexentry18 = Pokédex(id='18', name='pidgeot')
-pokédexentry19 = Pokédex(id='19', name='rattata')
-pokédexentry20 = Pokédex(id='20', name='raticate')
-pokédexentry21 = Pokédex(id='21', name='spearow')
-pokédexentry22 = Pokédex(id='22', name='fearow')
-pokédexentry23 = Pokédex(id='23', name='ekans')
-pokédexentry24 = Pokédex(id='24', name='arbok')
-pokédexentry25 = Pokédex(id='25', name='pikachu')
-pokédexentry26 = Pokédex(id='26', name='raichu')
-pokédexentry27 = Pokédex(id='27', name='sandshrew')
-pokédexentry28 = Pokédex(id='28', name='sandslash')
-pokédexentry29 = Pokédex(id='29', name='nidoran-f')
-pokédexentry30 = Pokédex(id='30', name='nidorina')
-pokédexentry31 = Pokédex(id='31', name='nidoqueen')
-pokédexentry32 = Pokédex(id='32', name='nidoran-m')
-pokédexentry33 = Pokédex(id='33', name='nidorino')
-pokédexentry34 = Pokédex(id='34', name='nidoking')
-pokédexentry35 = Pokédex(id='35', name='clefairy')
-pokédexentry36 = Pokédex(id='36', name='clefable')
-pokédexentry37 = Pokédex(id='37', name='vulpix')
-pokédexentry38 = Pokédex(id='38', name='ninetales')
-pokédexentry39 = Pokédex(id='39', name='jigglypuff')
-pokédexentry40 = Pokédex(id='40', name='wigglytuff')
-pokédexentry41 = Pokédex(id='41', name='zubat')
-pokédexentry42 = Pokédex(id='42', name='golbat')
-pokédexentry43 = Pokédex(id='43', name='oddish')
-pokédexentry44 = Pokédex(id='44', name='gloom')
-pokédexentry45 = Pokédex(id='45', name='vileplume')
-pokédexentry46 = Pokédex(id='46', name='paras')
-pokédexentry47 = Pokédex(id='47', name='parasect')
-pokédexentry48 = Pokédex(id='48', name='venonat')
-pokédexentry49 = Pokédex(id='49', name='venomoth')
-pokédexentry50 = Pokédex(id='50', name='diglett')
-pokédexentry51 = Pokédex(id='51', name='dugtrio')
-pokédexentry52 = Pokédex(id='52', name='meowth')
-pokédexentry53 = Pokédex(id='53', name='persian')
-pokédexentry54 = Pokédex(id='54', name='psyduck')
-pokédexentry55 = Pokédex(id='55', name='golduck')
-pokédexentry56 = Pokédex(id='56', name='mankey')
-pokédexentry57 = Pokédex(id='57', name='primeape')
-pokédexentry58 = Pokédex(id='58', name='growlithe')
-pokédexentry59 = Pokédex(id='59', name='arcanine')
-pokédexentry60 = Pokédex(id='60', name='poliwag')
-pokédexentry61 = Pokédex(id='61', name='poliwhirl')
-pokédexentry62 = Pokédex(id='62', name='poliwrath')
-pokédexentry63 = Pokédex(id='63', name='abra')
-pokédexentry64 = Pokédex(id='64', name='kadabra')
-pokédexentry65 = Pokédex(id='65', name='alakazam')
-pokédexentry66 = Pokédex(id='66', name='machop')
-pokédexentry67 = Pokédex(id='67', name='machoke')
-pokédexentry68 = Pokédex(id='68', name='machamp')
-pokédexentry69 = Pokédex(id='69', name='bellsprout')
-pokédexentry70 = Pokédex(id='70', name='weepinbell')
-pokédexentry71 = Pokédex(id='71', name='victreebel')
-pokédexentry72 = Pokédex(id='72', name='tentacool')
-pokédexentry73 = Pokédex(id='73', name='tentacruel')
-pokédexentry74 = Pokédex(id='74', name='geodude')
-pokédexentry75 = Pokédex(id='75', name='graveler')
-pokédexentry76 = Pokédex(id='76', name='golem')
-pokédexentry77 = Pokédex(id='77', name='ponyta')
-pokédexentry78 = Pokédex(id='78', name='rapidash')
-pokédexentry79 = Pokédex(id='79', name='slowpoke')
-pokédexentry80 = Pokédex(id='80', name='slowbro')
-pokédexentry81 = Pokédex(id='81', name='magnemite')
-pokédexentry82 = Pokédex(id='82', name='magneton')
-pokédexentry83 = Pokédex(id='83', name='farfetchd')
-pokédexentry84 = Pokédex(id='84', name='doduo')
-pokédexentry85 = Pokédex(id='85', name='dodrio')
-pokédexentry86 = Pokédex(id='86', name='seel')
-pokédexentry87 = Pokédex(id='87', name='dewgong')
-pokédexentry88 = Pokédex(id='88', name='grimer')
-pokédexentry89 = Pokédex(id='89', name='muk')
-pokédexentry90 = Pokédex(id='90', name='shellder')
-pokédexentry91 = Pokédex(id='91', name='cloyster')
-pokédexentry92 = Pokédex(id='92', name='gastly')
-pokédexentry93 = Pokédex(id='93', name='haunter')
-pokédexentry94 = Pokédex(id='94', name='gengar')
-pokédexentry95 = Pokédex(id='95', name='onix')
-pokédexentry96 = Pokédex(id='96', name='drowzee')
-pokédexentry97 = Pokédex(id='97', name='hypno')
-pokédexentry98 = Pokédex(id='98', name='krabby')
-pokédexentry99 = Pokédex(id='99', name='kingler')
-pokédexentry100 = Pokédex(id='100', name='voltorb')
-pokédexentry101 = Pokédex(id='101', name='electrode')
-pokédexentry102 = Pokédex(id='102', name='exeggcute')
-pokédexentry103 = Pokédex(id='103', name='exeggutor')
-pokédexentry104 = Pokédex(id='104', name='cubone')
-pokédexentry105 = Pokédex(id='105', name='marowak')
-pokédexentry106 = Pokédex(id='106', name='hitmonlee')
-pokédexentry107 = Pokédex(id='107', name='hitmonchan')
-pokédexentry108 = Pokédex(id='108', name='lickitung')
-pokédexentry109 = Pokédex(id='109', name='koffing')
-pokédexentry110 = Pokédex(id='110', name='weezing')
-pokédexentry111 = Pokédex(id='111', name='rhyhorn')
-pokédexentry112 = Pokédex(id='112', name='rhydon')
-pokédexentry113 = Pokédex(id='113', name='chansey')
-pokédexentry114 = Pokédex(id='114', name='tangela')
-pokédexentry115 = Pokédex(id='115', name='kangaskhan')
-pokédexentry116 = Pokédex(id='116', name='horsea')
-pokédexentry117 = Pokédex(id='117', name='seadra')
-pokédexentry118 = Pokédex(id='118', name='goldeen')
-pokédexentry119 = Pokédex(id='119', name='seaking')
-pokédexentry120 = Pokédex(id='120', name='staryu')
-pokédexentry121 = Pokédex(id='121', name='starmie')
-pokédexentry122 = Pokédex(id='122', name='mr-mime')
-pokédexentry123 = Pokédex(id='123', name='scyther')
-pokédexentry124 = Pokédex(id='124', name='jynx')
-pokédexentry125 = Pokédex(id='125', name='electabuzz')
-pokédexentry126 = Pokédex(id='126', name='magmar')
-pokédexentry127 = Pokédex(id='127', name='pinsir')
-pokédexentry128 = Pokédex(id='128', name='tauros')
-pokédexentry129 = Pokédex(id='129', name='magikarp')
-pokédexentry130 = Pokédex(id='130', name='gyarados')
-pokédexentry131 = Pokédex(id='131', name='lapras')
-pokédexentry132 = Pokédex(id='132', name='ditto')
-pokédexentry133 = Pokédex(id='133', name='eevee')
-pokédexentry134 = Pokédex(id='134', name='vaporeon')
-pokédexentry135 = Pokédex(id='135', name='jolteon')
-pokédexentry136 = Pokédex(id='136', name='flareon')
-pokédexentry137 = Pokédex(id='137', name='porygon')
-pokédexentry138 = Pokédex(id='138', name='omanyte')
-pokédexentry139 = Pokédex(id='139', name='omastar')
-pokédexentry140 = Pokédex(id='140', name='kabuto')
-pokédexentry141 = Pokédex(id='141', name='kabutops')
-pokédexentry142 = Pokédex(id='142', name='aerodactyl')
-pokédexentry143 = Pokédex(id='143', name='snorlax')
-pokédexentry144 = Pokédex(id='144', name='articuno')
-pokédexentry145 = Pokédex(id='145', name='zapdos')
-pokédexentry146 = Pokédex(id='146', name='moltres')
-pokédexentry147 = Pokédex(id='147', name='dratini')
-pokédexentry148 = Pokédex(id='148', name='dragonair')
-pokédexentry149 = Pokédex(id='149', name='dragonite')
-pokédexentry150 = Pokédex(id='150', name='mewtwo')
-pokédexentry151 = Pokédex(id='151', name='mew')
-pokédexentry152 = Pokédex(id='152', name='chikorita')
-pokédexentry153 = Pokédex(id='153', name='bayleef')
-pokédexentry154 = Pokédex(id='154', name='meganium')
-pokédexentry155 = Pokédex(id='155', name='cyndaquil')
-pokédexentry156 = Pokédex(id='156', name='quilava')
-pokédexentry157 = Pokédex(id='157', name='typhlosion')
-pokédexentry158 = Pokédex(id='158', name='totodile')
-pokédexentry159 = Pokédex(id='159', name='croconaw')
-pokédexentry160 = Pokédex(id='160', name='feraligatr')
-pokédexentry161 = Pokédex(id='161', name='sentret')
-pokédexentry162 = Pokédex(id='162', name='furret')
-pokédexentry163 = Pokédex(id='163', name='hoothoot')
-pokédexentry164 = Pokédex(id='164', name='noctowl')
-pokédexentry165 = Pokédex(id='165', name='ledyba')
-pokédexentry166 = Pokédex(id='166', name='ledian')
-pokédexentry167 = Pokédex(id='167', name='spinarak')
-pokédexentry168 = Pokédex(id='168', name='ariados')
-pokédexentry169 = Pokédex(id='169', name='crobat')
-pokédexentry170 = Pokédex(id='170', name='chinchou')
-pokédexentry171 = Pokédex(id='171', name='lanturn')
-pokédexentry172 = Pokédex(id='172', name='pichu')
-pokédexentry173 = Pokédex(id='173', name='cleffa')
-pokédexentry174 = Pokédex(id='174', name='igglybuff')
-pokédexentry175 = Pokédex(id='175', name='togepi')
-pokédexentry176 = Pokédex(id='176', name='togetic')
-pokédexentry177 = Pokédex(id='177', name='natu')
-pokédexentry178 = Pokédex(id='178', name='xatu')
-pokédexentry179 = Pokédex(id='179', name='mareep')
-pokédexentry180 = Pokédex(id='180', name='flaaffy')
-pokédexentry181 = Pokédex(id='181', name='ampharos')
-pokédexentry182 = Pokédex(id='182', name='bellossom')
-pokédexentry183 = Pokédex(id='183', name='marill')
-pokédexentry184 = Pokédex(id='184', name='azumarill')
-pokédexentry185 = Pokédex(id='185', name='sudowoodo')
-pokédexentry186 = Pokédex(id='186', name='politoed')
-pokédexentry187 = Pokédex(id='187', name='hoppip')
-pokédexentry188 = Pokédex(id='188', name='skiploom')
-pokédexentry189 = Pokédex(id='189', name='jumpluff')
-pokédexentry190 = Pokédex(id='190', name='aipom')
-pokédexentry191 = Pokédex(id='191', name='sunkern')
-pokédexentry192 = Pokédex(id='192', name='sunflora')
-pokédexentry193 = Pokédex(id='193', name='yanma')
-pokédexentry194 = Pokédex(id='194', name='wooper')
-pokédexentry195 = Pokédex(id='195', name='quagsire')
-pokédexentry196 = Pokédex(id='196', name='espeon')
-pokédexentry197 = Pokédex(id='197', name='umbreon')
-pokédexentry198 = Pokédex(id='198', name='murkrow')
-pokédexentry199 = Pokédex(id='199', name='slowking')
-pokédexentry200 = Pokédex(id='200', name='misdreavus')
-pokédexentry201 = Pokédex(id='201', name='unown')
-pokédexentry202 = Pokédex(id='202', name='wobbuffet')
-pokédexentry203 = Pokédex(id='203', name='girafarig')
-pokédexentry204 = Pokédex(id='204', name='pineco')
-pokédexentry205 = Pokédex(id='205', name='forretress')
-pokédexentry206 = Pokédex(id='206', name='dunsparce')
-pokédexentry207 = Pokédex(id='207', name='gligar')
-pokédexentry208 = Pokédex(id='208', name='steelix')
-pokédexentry209 = Pokédex(id='209', name='snubbull')
-pokédexentry210 = Pokédex(id='210', name='granbull')
-pokédexentry211 = Pokédex(id='211', name='qwilfish')
-pokédexentry212 = Pokédex(id='212', name='scizor')
-pokédexentry213 = Pokédex(id='213', name='shuckle')
-pokédexentry214 = Pokédex(id='214', name='heracross')
-pokédexentry215 = Pokédex(id='215', name='sneasel')
-pokédexentry216 = Pokédex(id='216', name='teddiursa')
-pokédexentry217 = Pokédex(id='217', name='ursaring')
-pokédexentry218 = Pokédex(id='218', name='slugma')
-pokédexentry219 = Pokédex(id='219', name='magcargo')
-pokédexentry220 = Pokédex(id='220', name='swinub')
-pokédexentry221 = Pokédex(id='221', name='piloswine')
-pokédexentry222 = Pokédex(id='222', name='corsola')
-pokédexentry223 = Pokédex(id='223', name='remoraid')
-pokédexentry224 = Pokédex(id='224', name='octillery')
-pokédexentry225 = Pokédex(id='225', name='delibird')
-pokédexentry226 = Pokédex(id='226', name='mantine')
-pokédexentry227 = Pokédex(id='227', name='skarmory')
-pokédexentry228 = Pokédex(id='228', name='houndour')
-pokédexentry229 = Pokédex(id='229', name='houndoom')
-pokédexentry230 = Pokédex(id='230', name='kingdra')
-pokédexentry231 = Pokédex(id='231', name='phanpy')
-pokédexentry232 = Pokédex(id='232', name='donphan')
-pokédexentry233 = Pokédex(id='233', name='porygon2')
-pokédexentry234 = Pokédex(id='234', name='stantler')
-pokédexentry235 = Pokédex(id='235', name='smeargle')
-pokédexentry236 = Pokédex(id='236', name='tyrogue')
-pokédexentry237 = Pokédex(id='237', name='hitmontop')
-pokédexentry238 = Pokédex(id='238', name='smoochum')
-pokédexentry239 = Pokédex(id='239', name='elekid')
-pokédexentry240 = Pokédex(id='240', name='magby')
-pokédexentry241 = Pokédex(id='241', name='miltank')
-pokédexentry242 = Pokédex(id='242', name='blissey')
-pokédexentry243 = Pokédex(id='243', name='raikou')
-pokédexentry244 = Pokédex(id='244', name='entei')
-pokédexentry245 = Pokédex(id='245', name='suicune')
-pokédexentry246 = Pokédex(id='246', name='larvitar')
-pokédexentry247 = Pokédex(id='247', name='pupitar')
-pokédexentry248 = Pokédex(id='248', name='tyranitar')
-pokédexentry249 = Pokédex(id='249', name='lugia')
-pokédexentry250 = Pokédex(id='250', name='ho-oh')
-pokédexentry251 = Pokédex(id='251', name='celebi')
-pokédexentry252 = Pokédex(id='252', name='treecko')
-pokédexentry253 = Pokédex(id='253', name='grovyle')
-pokédexentry254 = Pokédex(id='254', name='sceptile')
-pokédexentry255 = Pokédex(id='255', name='torchic')
-pokédexentry256 = Pokédex(id='256', name='combusken')
-pokédexentry257 = Pokédex(id='257', name='blaziken')
-pokédexentry258 = Pokédex(id='258', name='mudkip')
-pokédexentry259 = Pokédex(id='259', name='marshtomp')
-pokédexentry260 = Pokédex(id='260', name='swampert')
-pokédexentry261 = Pokédex(id='261', name='poochyena')
-pokédexentry262 = Pokédex(id='262', name='mightyena')
-pokédexentry263 = Pokédex(id='263', name='zigzagoon')
-pokédexentry264 = Pokédex(id='264', name='linoone')
-pokédexentry265 = Pokédex(id='265', name='wurmple')
-pokédexentry266 = Pokédex(id='266', name='silcoon')
-pokédexentry267 = Pokédex(id='267', name='beautifly')
-pokédexentry268 = Pokédex(id='268', name='cascoon')
-pokédexentry269 = Pokédex(id='269', name='dustox')
-pokédexentry270 = Pokédex(id='270', name='lotad')
-pokédexentry271 = Pokédex(id='271', name='lombre')
-pokédexentry272 = Pokédex(id='272', name='ludicolo')
-pokédexentry273 = Pokédex(id='273', name='seedot')
-pokédexentry274 = Pokédex(id='274', name='nuzleaf')
-pokédexentry275 = Pokédex(id='275', name='shiftry')
-pokédexentry276 = Pokédex(id='276', name='taillow')
-pokédexentry277 = Pokédex(id='277', name='swellow')
-pokédexentry278 = Pokédex(id='278', name='wingull')
-pokédexentry279 = Pokédex(id='279', name='pelipper')
-pokédexentry280 = Pokédex(id='280', name='ralts')
-pokédexentry281 = Pokédex(id='281', name='kirlia')
-pokédexentry282 = Pokédex(id='282', name='gardevoir')
-pokédexentry283 = Pokédex(id='283', name='surskit')
-pokédexentry284 = Pokédex(id='284', name='masquerain')
-pokédexentry285 = Pokédex(id='285', name='shroomish')
-pokédexentry286 = Pokédex(id='286', name='breloom')
-pokédexentry287 = Pokédex(id='287', name='slakoth')
-pokédexentry288 = Pokédex(id='288', name='vigoroth')
-pokédexentry289 = Pokédex(id='289', name='slaking')
-pokédexentry290 = Pokédex(id='290', name='nincada')
-pokédexentry291 = Pokédex(id='291', name='ninjask')
-pokédexentry292 = Pokédex(id='292', name='shedinja')
-pokédexentry293 = Pokédex(id='293', name='whismur')
-pokédexentry294 = Pokédex(id='294', name='loudred')
-pokédexentry295 = Pokédex(id='295', name='exploud')
-pokédexentry296 = Pokédex(id='296', name='makuhita')
-pokédexentry297 = Pokédex(id='297', name='hariyama')
-pokédexentry298 = Pokédex(id='298', name='azurill')
-pokédexentry299 = Pokédex(id='299', name='nosepass')
-pokédexentry300 = Pokédex(id='300', name='skitty')
-pokédexentry301 = Pokédex(id='301', name='delcatty')
-pokédexentry302 = Pokédex(id='302', name='sableye')
-pokédexentry303 = Pokédex(id='303', name='mawile')
-pokédexentry304 = Pokédex(id='304', name='aron')
-pokédexentry305 = Pokédex(id='305', name='lairon')
-pokédexentry306 = Pokédex(id='306', name='aggron')
-pokédexentry307 = Pokédex(id='307', name='meditite')
-pokédexentry308 = Pokédex(id='308', name='medicham')
-pokédexentry309 = Pokédex(id='309', name='electrike')
-pokédexentry310 = Pokédex(id='310', name='manectric')
-pokédexentry311 = Pokédex(id='311', name='plusle')
-pokédexentry312 = Pokédex(id='312', name='minun')
-pokédexentry313 = Pokédex(id='313', name='volbeat')
-pokédexentry314 = Pokédex(id='314', name='illumise')
-pokédexentry315 = Pokédex(id='315', name='roselia')
-pokédexentry316 = Pokédex(id='316', name='gulpin')
-pokédexentry317 = Pokédex(id='317', name='swalot')
-pokédexentry318 = Pokédex(id='318', name='carvanha')
-pokédexentry319 = Pokédex(id='319', name='sharpedo')
-pokédexentry320 = Pokédex(id='320', name='wailmer')
-pokédexentry321 = Pokédex(id='321', name='wailord')
-pokédexentry322 = Pokédex(id='322', name='numel')
-pokédexentry323 = Pokédex(id='323', name='camerupt')
-pokédexentry324 = Pokédex(id='324', name='torkoal')
-pokédexentry325 = Pokédex(id='325', name='spoink')
-pokédexentry326 = Pokédex(id='326', name='grumpig')
-pokédexentry327 = Pokédex(id='327', name='spinda')
-pokédexentry328 = Pokédex(id='328', name='trapinch')
-pokédexentry329 = Pokédex(id='329', name='vibrava')
-pokédexentry330 = Pokédex(id='330', name='flygon')
-pokédexentry331 = Pokédex(id='331', name='cacnea')
-pokédexentry332 = Pokédex(id='332', name='cacturne')
-pokédexentry333 = Pokédex(id='333', name='swablu')
-pokédexentry334 = Pokédex(id='334', name='altaria')
-pokédexentry335 = Pokédex(id='335', name='zangoose')
-pokédexentry336 = Pokédex(id='336', name='seviper')
-pokédexentry337 = Pokédex(id='337', name='lunatone')
-pokédexentry338 = Pokédex(id='338', name='solrock')
-pokédexentry339 = Pokédex(id='339', name='barboach')
-pokédexentry340 = Pokédex(id='340', name='whiscash')
-pokédexentry341 = Pokédex(id='341', name='corphish')
-pokédexentry342 = Pokédex(id='342', name='crawdaunt')
-pokédexentry343 = Pokédex(id='343', name='baltoy')
-pokédexentry344 = Pokédex(id='344', name='claydol')
-pokédexentry345 = Pokédex(id='345', name='lileep')
-pokédexentry346 = Pokédex(id='346', name='cradily')
-pokédexentry347 = Pokédex(id='347', name='anorith')
-pokédexentry348 = Pokédex(id='348', name='armaldo')
-pokédexentry349 = Pokédex(id='349', name='feebas')
-pokédexentry350 = Pokédex(id='350', name='milotic')
-pokédexentry351 = Pokédex(id='351', name='castform')
-pokédexentry352 = Pokédex(id='352', name='kecleon')
-pokédexentry353 = Pokédex(id='353', name='shuppet')
-pokédexentry354 = Pokédex(id='354', name='banette')
-pokédexentry355 = Pokédex(id='355', name='duskull')
-pokédexentry356 = Pokédex(id='356', name='dusclops')
-pokédexentry357 = Pokédex(id='357', name='tropius')
-pokédexentry358 = Pokédex(id='358', name='chimecho')
-pokédexentry359 = Pokédex(id='359', name='absol')
-pokédexentry360 = Pokédex(id='360', name='wynaut')
-pokédexentry361 = Pokédex(id='361', name='snorunt')
-pokédexentry362 = Pokédex(id='362', name='glalie')
-pokédexentry363 = Pokédex(id='363', name='spheal')
-pokédexentry364 = Pokédex(id='364', name='sealeo')
-pokédexentry365 = Pokédex(id='365', name='walrein')
-pokédexentry366 = Pokédex(id='366', name='clamperl')
-pokédexentry367 = Pokédex(id='367', name='huntail')
-pokédexentry368 = Pokédex(id='368', name='gorebyss')
-pokédexentry369 = Pokédex(id='369', name='relicanth')
-pokédexentry370 = Pokédex(id='370', name='luvdisc')
-pokédexentry371 = Pokédex(id='371', name='bagon')
-pokédexentry372 = Pokédex(id='372', name='shelgon')
-pokédexentry373 = Pokédex(id='373', name='salamence')
-pokédexentry374 = Pokédex(id='374', name='beldum')
-pokédexentry375 = Pokédex(id='375', name='metang')
-pokédexentry376 = Pokédex(id='376', name='metagross')
-pokédexentry377 = Pokédex(id='377', name='regirock')
-pokédexentry378 = Pokédex(id='378', name='regice')
-pokédexentry379 = Pokédex(id='379', name='registeel')
-pokédexentry380 = Pokédex(id='380', name='latias')
-pokédexentry381 = Pokédex(id='381', name='latios')
-pokédexentry382 = Pokédex(id='382', name='kyogre')
-pokédexentry383 = Pokédex(id='383', name='groudon')
-pokédexentry384 = Pokédex(id='384', name='rayquaza')
-pokédexentry385 = Pokédex(id='385', name='jirachi')
-pokédexentry386 = Pokédex(id='386', name='deoxys')
-pokédexentry387 = Pokédex(id='387', name='turtwig')
-pokédexentry388 = Pokédex(id='388', name='grotle')
-pokédexentry389 = Pokédex(id='389', name='torterra')
-pokédexentry390 = Pokédex(id='390', name='chimchar')
-pokédexentry391 = Pokédex(id='391', name='monferno')
-pokédexentry392 = Pokédex(id='392', name='infernape')
-pokédexentry393 = Pokédex(id='393', name='piplup')
-pokédexentry394 = Pokédex(id='394', name='prinplup')
-pokédexentry395 = Pokédex(id='395', name='empoleon')
-pokédexentry396 = Pokédex(id='396', name='starly')
-pokédexentry397 = Pokédex(id='397', name='staravia')
-pokédexentry398 = Pokédex(id='398', name='staraptor')
-pokédexentry399 = Pokédex(id='399', name='bidoof')
-pokédexentry400 = Pokédex(id='400', name='bibarel')
-pokédexentry401 = Pokédex(id='401', name='kricketot')
-pokédexentry402 = Pokédex(id='402', name='kricketune')
-pokédexentry403 = Pokédex(id='403', name='shinx')
-pokédexentry404 = Pokédex(id='404', name='luxio')
-pokédexentry405 = Pokédex(id='405', name='luxray')
-pokédexentry406 = Pokédex(id='406', name='budew')
-pokédexentry407 = Pokédex(id='407', name='roserade')
-pokédexentry408 = Pokédex(id='408', name='cranidos')
-pokédexentry409 = Pokédex(id='409', name='rampardos')
-pokédexentry410 = Pokédex(id='410', name='shieldon')
-pokédexentry411 = Pokédex(id='411', name='bastiodon')
-pokédexentry412 = Pokédex(id='412', name='burmy')
-pokédexentry413 = Pokédex(id='413', name='wormadam')
-pokédexentry414 = Pokédex(id='414', name='mothim')
-pokédexentry415 = Pokédex(id='415', name='combee')
-pokédexentry416 = Pokédex(id='416', name='vespiquen')
-pokédexentry417 = Pokédex(id='417', name='pachirisu')
-pokédexentry418 = Pokédex(id='418', name='buizel')
-pokédexentry419 = Pokédex(id='419', name='floatzel')
-pokédexentry420 = Pokédex(id='420', name='cherubi')
-pokédexentry421 = Pokédex(id='421', name='cherrim')
-pokédexentry422 = Pokédex(id='422', name='shellos')
-pokédexentry423 = Pokédex(id='423', name='gastrodon')
-pokédexentry424 = Pokédex(id='424', name='ambipom')
-pokédexentry425 = Pokédex(id='425', name='drifloon')
-pokédexentry426 = Pokédex(id='426', name='drifblim')
-pokédexentry427 = Pokédex(id='427', name='buneary')
-pokédexentry428 = Pokédex(id='428', name='lopunny')
-pokédexentry429 = Pokédex(id='429', name='mismagius')
-pokédexentry430 = Pokédex(id='430', name='honchkrow')
-pokédexentry431 = Pokédex(id='431', name='glameow')
-pokédexentry432 = Pokédex(id='432', name='purugly')
-pokédexentry433 = Pokédex(id='433', name='chingling')
-pokédexentry434 = Pokédex(id='434', name='stunky')
-pokédexentry435 = Pokédex(id='435', name='skuntank')
-pokédexentry436 = Pokédex(id='436', name='bronzor')
-pokédexentry437 = Pokédex(id='437', name='bronzong')
-pokédexentry438 = Pokédex(id='438', name='bonsly')
-pokédexentry439 = Pokédex(id='439', name='mime-jr')
-pokédexentry440 = Pokédex(id='440', name='happiny')
-pokédexentry441 = Pokédex(id='441', name='chatot')
-pokédexentry442 = Pokédex(id='442', name='spiritomb')
-pokédexentry443 = Pokédex(id='443', name='gible')
-pokédexentry444 = Pokédex(id='444', name='gabite')
-pokédexentry445 = Pokédex(id='445', name='garchomp')
-pokédexentry446 = Pokédex(id='446', name='munchlax')
-pokédexentry447 = Pokédex(id='447', name='riolu')
-pokédexentry448 = Pokédex(id='448', name='lucario')
-pokédexentry449 = Pokédex(id='449', name='hippopotas')
-pokédexentry450 = Pokédex(id='450', name='hippowdon')
-pokédexentry451 = Pokédex(id='451', name='skorupi')
-pokédexentry452 = Pokédex(id='452', name='drapion')
-pokédexentry453 = Pokédex(id='453', name='croagunk')
-pokédexentry454 = Pokédex(id='454', name='toxicroak')
-pokédexentry455 = Pokédex(id='455', name='carnivine')
-pokédexentry456 = Pokédex(id='456', name='finneon')
-pokédexentry457 = Pokédex(id='457', name='lumineon')
-pokédexentry458 = Pokédex(id='458', name='mantyke')
-pokédexentry459 = Pokédex(id='459', name='snover')
-pokédexentry460 = Pokédex(id='460', name='abomasnow')
-pokédexentry461 = Pokédex(id='461', name='weavile')
-pokédexentry462 = Pokédex(id='462', name='magnezone')
-pokédexentry463 = Pokédex(id='463', name='lickilicky')
-pokédexentry464 = Pokédex(id='464', name='rhyperior')
-pokédexentry465 = Pokédex(id='465', name='tangrowth')
-pokédexentry466 = Pokédex(id='466', name='electivire')
-pokédexentry467 = Pokédex(id='467', name='magmortar')
-pokédexentry468 = Pokédex(id='468', name='togekiss')
-pokédexentry469 = Pokédex(id='469', name='yanmega')
-pokédexentry470 = Pokédex(id='470', name='leafeon')
-pokédexentry471 = Pokédex(id='471', name='glaceon')
-pokédexentry472 = Pokédex(id='472', name='gliscor')
-pokédexentry473 = Pokédex(id='473', name='mamoswine')
-pokédexentry474 = Pokédex(id='474', name='porygon-z')
-pokédexentry475 = Pokédex(id='475', name='gallade')
-pokédexentry476 = Pokédex(id='476', name='probopass')
-pokédexentry477 = Pokédex(id='477', name='dusknoir')
-pokédexentry478 = Pokédex(id='478', name='froslass')
-pokédexentry479 = Pokédex(id='479', name='rotom')
-pokédexentry480 = Pokédex(id='480', name='uxie')
-pokédexentry481 = Pokédex(id='481', name='mesprit')
-pokédexentry482 = Pokédex(id='482', name='azelf')
-pokédexentry483 = Pokédex(id='483', name='dialga')
-pokédexentry484 = Pokédex(id='484', name='palkia')
-pokédexentry485 = Pokédex(id='485', name='heatran')
-pokédexentry486 = Pokédex(id='486', name='regigigas')
-pokédexentry487 = Pokédex(id='487', name='giratina')
-pokédexentry488 = Pokédex(id='488', name='cresselia')
-pokédexentry489 = Pokédex(id='489', name='phione')
-pokédexentry490 = Pokédex(id='490', name='manaphy')
-pokédexentry491 = Pokédex(id='491', name='darkrai')
-pokédexentry492 = Pokédex(id='492', name='shaymin')
-pokédexentry493 = Pokédex(id='493', name='arceus')
-pokédexentry494 = Pokédex(id='494', name='victini')
-pokédexentry495 = Pokédex(id='495', name='snivy')
-pokédexentry496 = Pokédex(id='496', name='servine')
-pokédexentry497 = Pokédex(id='497', name='serperior')
-pokédexentry498 = Pokédex(id='498', name='tepig')
-pokédexentry499 = Pokédex(id='499', name='pignite')
-pokédexentry500 = Pokédex(id='500', name='emboar')
-pokédexentry501 = Pokédex(id='501', name='oshawott')
-pokédexentry502 = Pokédex(id='502', name='dewott')
-pokédexentry503 = Pokédex(id='503', name='samurott')
-pokédexentry504 = Pokédex(id='504', name='patrat')
-pokédexentry505 = Pokédex(id='505', name='watchog')
-pokédexentry506 = Pokédex(id='506', name='lillipup')
-pokédexentry507 = Pokédex(id='507', name='herdier')
-pokédexentry508 = Pokédex(id='508', name='stoutland')
-pokédexentry509 = Pokédex(id='509', name='purrloin')
-pokédexentry510 = Pokédex(id='510', name='liepard')
-pokédexentry511 = Pokédex(id='511', name='pansage')
-pokédexentry512 = Pokédex(id='512', name='simisage')
-pokédexentry513 = Pokédex(id='513', name='pansear')
-pokédexentry514 = Pokédex(id='514', name='simisear')
-pokédexentry515 = Pokédex(id='515', name='panpour')
-pokédexentry516 = Pokédex(id='516', name='simipour')
-pokédexentry517 = Pokédex(id='517', name='munna')
-pokédexentry518 = Pokédex(id='518', name='musharna')
-pokédexentry519 = Pokédex(id='519', name='pidove')
-pokédexentry520 = Pokédex(id='520', name='tranquill')
-pokédexentry521 = Pokédex(id='521', name='unfezant')
-pokédexentry522 = Pokédex(id='522', name='blitzle')
-pokédexentry523 = Pokédex(id='523', name='zebstrika')
-pokédexentry524 = Pokédex(id='524', name='roggenrola')
-pokédexentry525 = Pokédex(id='525', name='boldore')
-pokédexentry526 = Pokédex(id='526', name='gigalith')
-pokédexentry527 = Pokédex(id='527', name='woobat')
-pokédexentry528 = Pokédex(id='528', name='swoobat')
-pokédexentry529 = Pokédex(id='529', name='drilbur')
-pokédexentry530 = Pokédex(id='530', name='excadrill')
-pokédexentry531 = Pokédex(id='531', name='audino')
-pokédexentry532 = Pokédex(id='532', name='timburr')
-pokédexentry533 = Pokédex(id='533', name='gurdurr')
-pokédexentry534 = Pokédex(id='534', name='conkeldurr')
-pokédexentry535 = Pokédex(id='535', name='tympole')
-pokédexentry536 = Pokédex(id='536', name='palpitoad')
-pokédexentry537 = Pokédex(id='537', name='seismitoad')
-pokédexentry538 = Pokédex(id='538', name='throh')
-pokédexentry539 = Pokédex(id='539', name='sawk')
-pokédexentry540 = Pokédex(id='540', name='sewaddle')
-pokédexentry541 = Pokédex(id='541', name='swadloon')
-pokédexentry542 = Pokédex(id='542', name='leavanny')
-pokédexentry543 = Pokédex(id='543', name='venipede')
-pokédexentry544 = Pokédex(id='544', name='whirlipede')
-pokédexentry545 = Pokédex(id='545', name='scolipede')
-pokédexentry546 = Pokédex(id='546', name='cottonee')
-pokédexentry547 = Pokédex(id='547', name='whimsicott')
-pokédexentry548 = Pokédex(id='548', name='petilil')
-pokédexentry549 = Pokédex(id='549', name='lilligant')
-pokédexentry550 = Pokédex(id='550', name='basculin')
-pokédexentry551 = Pokédex(id='551', name='sandile')
-pokédexentry552 = Pokédex(id='552', name='krokorok')
-pokédexentry553 = Pokédex(id='553', name='krookodile')
-pokédexentry554 = Pokédex(id='554', name='darumaka')
-pokédexentry555 = Pokédex(id='555', name='darmanitan')
-pokédexentry556 = Pokédex(id='556', name='maractus')
-pokédexentry557 = Pokédex(id='557', name='dwebble')
-pokédexentry558 = Pokédex(id='558', name='crustle')
-pokédexentry559 = Pokédex(id='559', name='scraggy')
-pokédexentry560 = Pokédex(id='560', name='scrafty')
-pokédexentry561 = Pokédex(id='561', name='sigilyph')
-pokédexentry562 = Pokédex(id='562', name='yamask')
-pokédexentry563 = Pokédex(id='563', name='cofagrigus')
-pokédexentry564 = Pokédex(id='564', name='tirtouga')
-pokédexentry565 = Pokédex(id='565', name='carracosta')
-pokédexentry566 = Pokédex(id='566', name='archen')
-pokédexentry567 = Pokédex(id='567', name='archeops')
-pokédexentry568 = Pokédex(id='568', name='trubbish')
-pokédexentry569 = Pokédex(id='569', name='garbodor')
-pokédexentry570 = Pokédex(id='570', name='zorua')
-pokédexentry571 = Pokédex(id='571', name='zoroark')
-pokédexentry572 = Pokédex(id='572', name='minccino')
-pokédexentry573 = Pokédex(id='573', name='cinccino')
-pokédexentry574 = Pokédex(id='574', name='gothita')
-pokédexentry575 = Pokédex(id='575', name='gothorita')
-pokédexentry576 = Pokédex(id='576', name='gothitelle')
-pokédexentry577 = Pokédex(id='577', name='solosis')
-pokédexentry578 = Pokédex(id='578', name='duosion')
-pokédexentry579 = Pokédex(id='579', name='reuniclus')
-pokédexentry580 = Pokédex(id='580', name='ducklett')
-pokédexentry581 = Pokédex(id='581', name='swanna')
-pokédexentry582 = Pokédex(id='582', name='vanillite')
-pokédexentry583 = Pokédex(id='583', name='vanillish')
-pokédexentry584 = Pokédex(id='584', name='vanilluxe')
-pokédexentry585 = Pokédex(id='585', name='deerling')
-pokédexentry586 = Pokédex(id='586', name='sawsbuck')
-pokédexentry587 = Pokédex(id='587', name='emolga')
-pokédexentry588 = Pokédex(id='588', name='karrablast')
-pokédexentry589 = Pokédex(id='589', name='escavalier')
-pokédexentry590 = Pokédex(id='590', name='foongus')
-pokédexentry591 = Pokédex(id='591', name='amoonguss')
-pokédexentry592 = Pokédex(id='592', name='frillish')
-pokédexentry593 = Pokédex(id='593', name='jellicent')
-pokédexentry594 = Pokédex(id='594', name='alomomola')
-pokédexentry595 = Pokédex(id='595', name='joltik')
-pokédexentry596 = Pokédex(id='596', name='galvantula')
-pokédexentry597 = Pokédex(id='597', name='ferroseed')
-pokédexentry598 = Pokédex(id='598', name='ferrothorn')
-pokédexentry599 = Pokédex(id='599', name='klink')
-pokédexentry600 = Pokédex(id='600', name='klang')
-pokédexentry601 = Pokédex(id='601', name='klinklang')
-pokédexentry602 = Pokédex(id='602', name='tynamo')
-pokédexentry603 = Pokédex(id='603', name='eelektrik')
-pokédexentry604 = Pokédex(id='604', name='eelektross')
-pokédexentry605 = Pokédex(id='605', name='elgyem')
-pokédexentry606 = Pokédex(id='606', name='beheeyem')
-pokédexentry607 = Pokédex(id='607', name='litwick')
-pokédexentry608 = Pokédex(id='608', name='lampent')
-pokédexentry609 = Pokédex(id='609', name='chandelure')
-pokédexentry610 = Pokédex(id='610', name='axew')
-pokédexentry611 = Pokédex(id='611', name='fraxure')
-pokédexentry612 = Pokédex(id='612', name='haxorus')
-pokédexentry613 = Pokédex(id='613', name='cubchoo')
-pokédexentry614 = Pokédex(id='614', name='beartic')
-pokédexentry615 = Pokédex(id='615', name='cryogonal')
-pokédexentry616 = Pokédex(id='616', name='shelmet')
-pokédexentry617 = Pokédex(id='617', name='accelgor')
-pokédexentry618 = Pokédex(id='618', name='stunfisk')
-pokédexentry619 = Pokédex(id='619', name='mienfoo')
-pokédexentry620 = Pokédex(id='620', name='mienshao')
-pokédexentry621 = Pokédex(id='621', name='druddigon')
-pokédexentry622 = Pokédex(id='622', name='golett')
-pokédexentry623 = Pokédex(id='623', name='golurk')
-pokédexentry624 = Pokédex(id='624', name='pawniard')
-pokédexentry625 = Pokédex(id='625', name='bisharp')
-pokédexentry626 = Pokédex(id='626', name='bouffalant')
-pokédexentry627 = Pokédex(id='627', name='rufflet')
-pokédexentry628 = Pokédex(id='628', name='braviary')
-pokédexentry629 = Pokédex(id='629', name='vullaby')
-pokédexentry630 = Pokédex(id='630', name='mandibuzz')
-pokédexentry631 = Pokédex(id='631', name='heatmor')
-pokédexentry632 = Pokédex(id='632', name='durant')
-pokédexentry633 = Pokédex(id='633', name='deino')
-pokédexentry634 = Pokédex(id='634', name='zweilous')
-pokédexentry635 = Pokédex(id='635', name='hydreigon')
-pokédexentry636 = Pokédex(id='636', name='larvesta')
-pokédexentry637 = Pokédex(id='637', name='volcarona')
-pokédexentry638 = Pokédex(id='638', name='cobalion')
-pokédexentry639 = Pokédex(id='639', name='terrakion')
-pokédexentry640 = Pokédex(id='640', name='virizion')
-pokédexentry641 = Pokédex(id='641', name='tornadus')
-pokédexentry642 = Pokédex(id='642', name='thundurus')
-pokédexentry643 = Pokédex(id='643', name='reshiram')
-pokédexentry644 = Pokédex(id='644', name='zekrom')
-pokédexentry645 = Pokédex(id='645', name='landorus')
-pokédexentry646 = Pokédex(id='646', name='kyurem')
-pokédexentry647 = Pokédex(id='647', name='keldeo')
-pokédexentry648 = Pokédex(id='648', name='meloetta')
-pokédexentry649 = Pokédex(id='649', name='genesect')
-pokédexentry650 = Pokédex(id='650', name='chespin')
-pokédexentry651 = Pokédex(id='651', name='quilladin')
-pokédexentry652 = Pokédex(id='652', name='chesnaught')
-pokédexentry653 = Pokédex(id='653', name='fennekin')
-pokédexentry654 = Pokédex(id='654', name='braixen')
-pokédexentry655 = Pokédex(id='655', name='delphox')
-pokédexentry656 = Pokédex(id='656', name='froakie')
-pokédexentry657 = Pokédex(id='657', name='frogadier')
-pokédexentry658 = Pokédex(id='658', name='greninja')
-pokédexentry659 = Pokédex(id='659', name='bunnelby')
-pokédexentry660 = Pokédex(id='660', name='diggersby')
-pokédexentry661 = Pokédex(id='661', name='fletchling')
-pokédexentry662 = Pokédex(id='662', name='fletchinder')
-pokédexentry663 = Pokédex(id='663', name='talonflame')
-pokédexentry664 = Pokédex(id='664', name='scatterbug')
-pokédexentry665 = Pokédex(id='665', name='spewpa')
-pokédexentry666 = Pokédex(id='666', name='vivillon')
-pokédexentry667 = Pokédex(id='667', name='litleo')
-pokédexentry668 = Pokédex(id='668', name='pyroar')
-pokédexentry669 = Pokédex(id='669', name='flabebe')
-pokédexentry670 = Pokédex(id='670', name='floette')
-pokédexentry671 = Pokédex(id='671', name='florges')
-pokédexentry672 = Pokédex(id='672', name='skiddo')
-pokédexentry673 = Pokédex(id='673', name='gogoat')
-pokédexentry674 = Pokédex(id='674', name='pancham')
-pokédexentry675 = Pokédex(id='675', name='pangoro')
-pokédexentry676 = Pokédex(id='676', name='furfrou')
-pokédexentry677 = Pokédex(id='677', name='espurr')
-pokédexentry678 = Pokédex(id='678', name='meowstic')
-pokédexentry679 = Pokédex(id='679', name='honedge')
-pokédexentry680 = Pokédex(id='680', name='doublade')
-pokédexentry681 = Pokédex(id='681', name='aegislash')
-pokédexentry682 = Pokédex(id='682', name='spritzee')
-pokédexentry683 = Pokédex(id='683', name='aromatisse')
-pokédexentry684 = Pokédex(id='684', name='swirlix')
-pokédexentry685 = Pokédex(id='685', name='slurpuff')
-pokédexentry686 = Pokédex(id='686', name='inkay')
-pokédexentry687 = Pokédex(id='687', name='malamar')
-pokédexentry688 = Pokédex(id='688', name='binacle')
-pokédexentry689 = Pokédex(id='689', name='barbaracle')
-pokédexentry690 = Pokédex(id='690', name='skrelp')
-pokédexentry691 = Pokédex(id='691', name='dragalge')
-pokédexentry692 = Pokédex(id='692', name='clauncher')
-pokédexentry693 = Pokédex(id='693', name='clawitzer')
-pokédexentry694 = Pokédex(id='694', name='helioptile')
-pokédexentry695 = Pokédex(id='695', name='heliolisk')
-pokédexentry696 = Pokédex(id='696', name='tyrunt')
-pokédexentry697 = Pokédex(id='697', name='tyrantrum')
-pokédexentry698 = Pokédex(id='698', name='amaura')
-pokédexentry699 = Pokédex(id='699', name='aurorus')
-pokédexentry700 = Pokédex(id='700', name='sylveon')
-pokédexentry701 = Pokédex(id='701', name='hawlucha')
-pokédexentry702 = Pokédex(id='702', name='dedenne')
-pokédexentry703 = Pokédex(id='703', name='carbink')
-pokédexentry704 = Pokédex(id='704', name='goomy')
-pokédexentry705 = Pokédex(id='705', name='sliggoo')
-pokédexentry706 = Pokédex(id='706', name='goodra')
-pokédexentry707 = Pokédex(id='707', name='klefki')
-pokédexentry708 = Pokédex(id='708', name='phantump')
-pokédexentry709 = Pokédex(id='709', name='trevenant')
-pokédexentry710 = Pokédex(id='710', name='pumpkaboo')
-pokédexentry711 = Pokédex(id='711', name='gourgeist')
-pokédexentry712 = Pokédex(id='712', name='bergmite')
-pokédexentry713 = Pokédex(id='713', name='avalugg')
-pokédexentry714 = Pokédex(id='714', name='noibat')
-pokédexentry715 = Pokédex(id='715', name='noivern')
-pokédexentry716 = Pokédex(id='716', name='xerneas')
-pokédexentry717 = Pokédex(id='717', name='yveltal')
-pokédexentry718 = Pokédex(id='718', name='zygarde')
-pokédexentry719 = Pokédex(id='719', name='diancie')
-pokédexentry720 = Pokédex(id='720', name='hoopa')
-pokédexentry721 = Pokédex(id='721', name='volcanion')
-pokédexentry722 = Pokédex(id='722', name='rowlet')
-pokédexentry723 = Pokédex(id='723', name='dartrix')
-pokédexentry724 = Pokédex(id='724', name='decidueye')
-pokédexentry725 = Pokédex(id='725', name='litten')
-pokédexentry726 = Pokédex(id='726', name='torracat')
-pokédexentry727 = Pokédex(id='727', name='incineroar')
-pokédexentry728 = Pokédex(id='728', name='popplio')
-pokédexentry729 = Pokédex(id='729', name='brionne')
-pokédexentry730 = Pokédex(id='730', name='primarina')
-pokédexentry731 = Pokédex(id='731', name='pikipek')
-pokédexentry732 = Pokédex(id='732', name='trumbeak')
-pokédexentry733 = Pokédex(id='733', name='toucannon')
-pokédexentry734 = Pokédex(id='734', name='yungoos')
-pokédexentry735 = Pokédex(id='735', name='gumshoos')
-pokédexentry736 = Pokédex(id='736', name='grubbin')
-pokédexentry737 = Pokédex(id='737', name='charjabug')
-pokédexentry738 = Pokédex(id='738', name='vikavolt')
-pokédexentry739 = Pokédex(id='739', name='crabrawler')
-pokédexentry740 = Pokédex(id='740', name='crabominable')
-pokédexentry741 = Pokédex(id='741', name='oricorio')
-pokédexentry742 = Pokédex(id='742', name='cutiefly')
-pokédexentry743 = Pokédex(id='743', name='ribombee')
-pokédexentry744 = Pokédex(id='744', name='rockruff')
-pokédexentry745 = Pokédex(id='745', name='lycanroc')
-pokédexentry746 = Pokédex(id='746', name='wishiwashi')
-pokédexentry747 = Pokédex(id='747', name='mareanie')
-pokédexentry748 = Pokédex(id='748', name='toxapex')
-pokédexentry749 = Pokédex(id='749', name='mudbray')
-pokédexentry750 = Pokédex(id='750', name='mudsdale')
-pokédexentry751 = Pokédex(id='751', name='dewpider')
-pokédexentry752 = Pokédex(id='752', name='araquanid')
-pokédexentry753 = Pokédex(id='753', name='fomantis')
-pokédexentry754 = Pokédex(id='754', name='lurantis')
-pokédexentry755 = Pokédex(id='755', name='morelull')
-pokédexentry756 = Pokédex(id='756', name='shiinotic')
-pokédexentry757 = Pokédex(id='757', name='salandit')
-pokédexentry758 = Pokédex(id='758', name='salazzle')
-pokédexentry759 = Pokédex(id='759', name='stufful')
-pokédexentry760 = Pokédex(id='760', name='bewear')
-pokédexentry761 = Pokédex(id='761', name='bounsweet')
-pokédexentry762 = Pokédex(id='762', name='steenee')
-pokédexentry763 = Pokédex(id='763', name='tsareena')
-pokédexentry764 = Pokédex(id='764', name='comfey')
-pokédexentry765 = Pokédex(id='765', name='oranguru')
-pokédexentry766 = Pokédex(id='766', name='passimian')
-pokédexentry767 = Pokédex(id='767', name='wimpod')
-pokédexentry768 = Pokédex(id='768', name='golisopod')
-pokédexentry769 = Pokédex(id='769', name='sandygast')
-pokédexentry770 = Pokédex(id='770', name='palossand')
-pokédexentry771 = Pokédex(id='771', name='pyukumuku')
-pokédexentry772 = Pokédex(id='772', name='type-null')
-pokédexentry773 = Pokédex(id='773', name='silvally')
-pokédexentry774 = Pokédex(id='774', name='minior')
-pokédexentry775 = Pokédex(id='775', name='komala')
-pokédexentry776 = Pokédex(id='776', name='turtonator')
-pokédexentry777 = Pokédex(id='777', name='togedemaru')
-pokédexentry778 = Pokédex(id='778', name='mimikyu')
-pokédexentry779 = Pokédex(id='779', name='bruxish')
-pokédexentry780 = Pokédex(id='780', name='drampa')
-pokédexentry781 = Pokédex(id='781', name='dhelmise')
-pokédexentry782 = Pokédex(id='782', name='jangmo-o')
-pokédexentry783 = Pokédex(id='783', name='hakamo-o')
-pokédexentry784 = Pokédex(id='784', name='kommo-o')
-pokédexentry785 = Pokédex(id='785', name='tapu-koko')
-pokédexentry786 = Pokédex(id='786', name='tapu-lele')
-pokédexentry787 = Pokédex(id='787', name='tapu-bulu')
-pokédexentry788 = Pokédex(id='788', name='tapu-fini')
-pokédexentry789 = Pokédex(id='789', name='cosmog')
-pokédexentry790 = Pokédex(id='790', name='cosmoem')
-pokédexentry791 = Pokédex(id='791', name='solgaleo')
-pokédexentry792 = Pokédex(id='792', name='lunala')
-pokédexentry793 = Pokédex(id='793', name='nihilego')
-pokédexentry794 = Pokédex(id='794', name='buzzwole')
-pokédexentry795 = Pokédex(id='795', name='pheromosa')
-pokédexentry796 = Pokédex(id='796', name='xurkitree')
-pokédexentry797 = Pokédex(id='797', name='celesteela')
-pokédexentry798 = Pokédex(id='798', name='kartana')
-pokédexentry799 = Pokédex(id='799', name='guzzlord')
-pokédexentry800 = Pokédex(id='800', name='necrozma')
-pokédexentry801 = Pokédex(id='801', name='magearna')
-pokédexentry802 = Pokédex(id='802', name='marshadow')
-pokédexentry803 = Pokédex(id='803', name='poipole')
-pokédexentry804 = Pokédex(id='804', name='naganadel')
-pokédexentry805 = Pokédex(id='805', name='stakataka')
-pokédexentry806 = Pokédex(id='806', name='blacephalon')
-pokédexentry807 = Pokédex(id='807', name='zeraora')
-pokédexentry808 = Pokédex(id='808', name='meltan')
-pokédexentry809 = Pokédex(id='809', name='melmetal')
-pokédexentry810 = Pokédex(id='810', name='grookey')
-pokédexentry811 = Pokédex(id='811', name='thwackey')
-pokédexentry812 = Pokédex(id='812', name='rillaboom')
-pokédexentry813 = Pokédex(id='813', name='scorbunny')
-pokédexentry814 = Pokédex(id='814', name='raboot')
-pokédexentry815 = Pokédex(id='815', name='cinderace')
-pokédexentry816 = Pokédex(id='816', name='sobble')
-pokédexentry817 = Pokédex(id='817', name='drizzile')
-pokédexentry818 = Pokédex(id='818', name='inteleon')
-pokédexentry819 = Pokédex(id='819', name='skwovet')
-pokédexentry820 = Pokédex(id='820', name='greedent')
-pokédexentry821 = Pokédex(id='821', name='rookidee')
-pokédexentry822 = Pokédex(id='822', name='corvisquire')
-pokédexentry823 = Pokédex(id='823', name='corviknight')
-pokédexentry824 = Pokédex(id='824', name='blipbug')
-pokédexentry825 = Pokédex(id='825', name='dottler')
-pokédexentry826 = Pokédex(id='826', name='orbeetle')
-pokédexentry827 = Pokédex(id='827', name='nickit')
-pokédexentry828 = Pokédex(id='828', name='thievul')
-pokédexentry829 = Pokédex(id='829', name='gossifleur')
-pokédexentry830 = Pokédex(id='830', name='eldegoss')
-pokédexentry831 = Pokédex(id='831', name='wooloo')
-pokédexentry832 = Pokédex(id='832', name='dubwool')
-pokédexentry833 = Pokédex(id='833', name='chewtle')
-pokédexentry834 = Pokédex(id='834', name='drednaw')
-pokédexentry835 = Pokédex(id='835', name='yamper')
-pokédexentry836 = Pokédex(id='836', name='boltund')
-pokédexentry837 = Pokédex(id='837', name='rolycoly')
-pokédexentry838 = Pokédex(id='838', name='carkol')
-pokédexentry839 = Pokédex(id='839', name='coalossal')
-pokédexentry840 = Pokédex(id='840', name='applin')
-pokédexentry841 = Pokédex(id='841', name='flapple')
-pokédexentry842 = Pokédex(id='842', name='appletun')
-pokédexentry843 = Pokédex(id='843', name='silicobra')
-pokédexentry844 = Pokédex(id='844', name='sandaconda')
-pokédexentry845 = Pokédex(id='845', name='cramorant')
-pokédexentry846 = Pokédex(id='846', name='arrokuda')
-pokédexentry847 = Pokédex(id='847', name='barraskewda')
-pokédexentry848 = Pokédex(id='848', name='toxel')
-pokédexentry849 = Pokédex(id='849', name='toxtricity')
-pokédexentry850 = Pokédex(id='850', name='sizzlipede')
-pokédexentry851 = Pokédex(id='851', name='centiskorch')
-pokédexentry852 = Pokédex(id='852', name='clobbopus')
-pokédexentry853 = Pokédex(id='853', name='grapploct')
-pokédexentry854 = Pokédex(id='854', name='sinistea')
-pokédexentry855 = Pokédex(id='855', name='polteageist')
-pokédexentry856 = Pokédex(id='856', name='hatenna')
-pokédexentry857 = Pokédex(id='857', name='hattrem')
-pokédexentry858 = Pokédex(id='858', name='hatterene')
-pokédexentry859 = Pokédex(id='859', name='impidimp')
-pokédexentry860 = Pokédex(id='860', name='morgrem')
-pokédexentry861 = Pokédex(id='861', name='grimmsnarl')
-pokédexentry862 = Pokédex(id='862', name='obstagoon')
-pokédexentry863 = Pokédex(id='863', name='perrserker')
-pokédexentry864 = Pokédex(id='864', name='cursola')
-pokédexentry865 = Pokédex(id='865', name='sirfetchd')
-pokédexentry866 = Pokédex(id='866', name='mr-rime')
-pokédexentry867 = Pokédex(id='867', name='runerigus')
-pokédexentry868 = Pokédex(id='868', name='milcery')
-pokédexentry869 = Pokédex(id='869', name='alcremie')
-pokédexentry870 = Pokédex(id='870', name='falinks')
-pokédexentry871 = Pokédex(id='871', name='pincurchin')
-pokédexentry872 = Pokédex(id='872', name='snom')
-pokédexentry873 = Pokédex(id='873', name='frosmoth')
-pokédexentry874 = Pokédex(id='874', name='stonjourner')
-pokédexentry875 = Pokédex(id='875', name='eiscue')
-pokédexentry876 = Pokédex(id='876', name='indeedee')
-pokédexentry877 = Pokédex(id='877', name='morpeko')
-pokédexentry878 = Pokédex(id='878', name='cufant')
-pokédexentry879 = Pokédex(id='879', name='copperajah')
-pokédexentry880 = Pokédex(id='880', name='dracozolt')
-pokédexentry881 = Pokédex(id='881', name='arctozolt')
-pokédexentry882 = Pokédex(id='882', name='dracovish')
-pokédexentry883 = Pokédex(id='883', name='arctovish')
-pokédexentry884 = Pokédex(id='884', name='duraludon')
-pokédexentry885 = Pokédex(id='885', name='dreepy')
-pokédexentry886 = Pokédex(id='886', name='drakloak')
-pokédexentry887 = Pokédex(id='887', name='dragapult')
-pokédexentry888 = Pokédex(id='888', name='zacian')
-pokédexentry889 = Pokédex(id='889', name='zamazenta')
-pokédexentry890 = Pokédex(id='890', name='eternatus')
-pokédexentry891 = Pokédex(id='891', name='kubfu')
-pokédexentry892 = Pokédex(id='892', name='urshifu')
-pokédexentry893 = Pokédex(id='893', name='zarude')
-pokédexentry894 = Pokédex(id='894', name='regieleki')
-pokédexentry895 = Pokédex(id='895', name='regidrago')
-pokédexentry896 = Pokédex(id='896', name='glastrier')
-pokédexentry897 = Pokédex(id='897', name='spectrier')
-pokédexentry898 = Pokédex(id='898', name='calyrex')
-pokédexentry899 = Pokédex(id='899', name='wyrdeer')
-pokédexentry900 = Pokédex(id='900', name='kleavor')
-pokédexentry901 = Pokédex(id='901', name='ursaluna')
-pokédexentry902 = Pokédex(id='902', name='basculegion')
-pokédexentry903 = Pokédex(id='903', name='sneasler')
-pokédexentry904 = Pokédex(id='904', name='overqwil')
-pokédexentry905 = Pokédex(id='905', name='enamorus')
-pokédexentry906 = Pokédex(id='906', name='sprigatito')
-pokédexentry907 = Pokédex(id='907', name='floragato')
-pokédexentry908 = Pokédex(id='908', name='meowscarada')
-pokédexentry909 = Pokédex(id='909', name='fuecoco')
-pokédexentry910 = Pokédex(id='910', name='crocalor')
-pokédexentry911 = Pokédex(id='911', name='skeledirge')
-pokédexentry912 = Pokédex(id='912', name='quaxly')
-pokédexentry913 = Pokédex(id='913', name='quaxwell')
-pokédexentry914 = Pokédex(id='914', name='quaquaval')
-pokédexentry915 = Pokédex(id='915', name='lechonk')
-pokédexentry916 = Pokédex(id='916', name='oinkologne')
-pokédexentry917 = Pokédex(id='917', name='tarountula')
-pokédexentry918 = Pokédex(id='918', name='spidops')
-pokédexentry919 = Pokédex(id='919', name='nymble')
-pokédexentry920 = Pokédex(id='920', name='lokix')
-pokédexentry921 = Pokédex(id='921', name='pawmi')
-pokédexentry922 = Pokédex(id='922', name='pawmo')
-pokédexentry923 = Pokédex(id='923', name='pawmot')
-pokédexentry924 = Pokédex(id='924', name='tandemaus')
-pokédexentry925 = Pokédex(id='925', name='maushold')
-pokédexentry926 = Pokédex(id='926', name='fidough')
-pokédexentry927 = Pokédex(id='927', name='dachsbun')
-pokédexentry928 = Pokédex(id='928', name='smoliv')
-pokédexentry929 = Pokédex(id='929', name='dolliv')
-pokédexentry930 = Pokédex(id='930', name='arboliva')
-pokédexentry931 = Pokédex(id='931', name='squawkabilly')
-pokédexentry932 = Pokédex(id='932', name='nacli')
-pokédexentry933 = Pokédex(id='933', name='naclstack')
-pokédexentry934 = Pokédex(id='934', name='garganacl')
-pokédexentry935 = Pokédex(id='935', name='charcadet')
-pokédexentry936 = Pokédex(id='936', name='armarouge')
-pokédexentry937 = Pokédex(id='937', name='ceruledge')
-pokédexentry938 = Pokédex(id='938', name='tadbulb')
-pokédexentry939 = Pokédex(id='939', name='bellibolt')
-pokédexentry940 = Pokédex(id='940', name='wattrel')
-pokédexentry941 = Pokédex(id='941', name='kilowattrel')
-pokédexentry942 = Pokédex(id='942', name='maschiff')
-pokédexentry943 = Pokédex(id='943', name='mabosstiff')
-pokédexentry944 = Pokédex(id='944', name='shroodle')
-pokédexentry945 = Pokédex(id='945', name='grafaiai')
-pokédexentry946 = Pokédex(id='946', name='bramblin')
-pokédexentry947 = Pokédex(id='947', name='brambleghast')
-pokédexentry948 = Pokédex(id='948', name='toedscool')
-pokédexentry949 = Pokédex(id='949', name='toedscruel')
-pokédexentry950 = Pokédex(id='950', name='klawf')
-pokédexentry951 = Pokédex(id='951', name='capsakid')
-pokédexentry952 = Pokédex(id='952', name='scovillain')
-pokédexentry953 = Pokédex(id='953', name='rellor')
-pokédexentry954 = Pokédex(id='954', name='rabsca')
-pokédexentry955 = Pokédex(id='955', name='flittle')
-pokédexentry956 = Pokédex(id='956', name='espathra')
-pokédexentry957 = Pokédex(id='957', name='tinkatink')
-pokédexentry958 = Pokédex(id='958', name='tinkatuff')
-pokédexentry959 = Pokédex(id='959', name='tinkaton')
-pokédexentry960 = Pokédex(id='960', name='wiglett')
-pokédexentry961 = Pokédex(id='961', name='wugtrio')
-pokédexentry962 = Pokédex(id='962', name='bombirdier')
-pokédexentry963 = Pokédex(id='963', name='finizen')
-pokédexentry964 = Pokédex(id='964', name='palafin')
-pokédexentry965 = Pokédex(id='965', name='varoom')
-pokédexentry966 = Pokédex(id='966', name='revavroom')
-pokédexentry967 = Pokédex(id='967', name='cyclizar')
-pokédexentry968 = Pokédex(id='968', name='orthworm')
-pokédexentry969 = Pokédex(id='969', name='glimmet')
-pokédexentry970 = Pokédex(id='970', name='glimmora')
-pokédexentry971 = Pokédex(id='971', name='greavard')
-pokédexentry972 = Pokédex(id='972', name='houndstone')
-pokédexentry973 = Pokédex(id='973', name='flamigo')
-pokédexentry974 = Pokédex(id='974', name='cetoddle')
-pokédexentry975 = Pokédex(id='975', name='cetitan')
-pokédexentry976 = Pokédex(id='976', name='veluza')
-pokédexentry977 = Pokédex(id='977', name='dondozo')
-pokédexentry978 = Pokédex(id='978', name='tatsugiri')
-pokédexentry979 = Pokédex(id='979', name='annihilape')
-pokédexentry980 = Pokédex(id='980', name='clodsire')
-pokédexentry981 = Pokédex(id='981', name='farigiraf')
-pokédexentry982 = Pokédex(id='982', name='dudunsparce')
-pokédexentry983 = Pokédex(id='983', name='kingambit')
-pokédexentry984 = Pokédex(id='984', name='great-tusk')
-pokédexentry985 = Pokédex(id='985', name='scream-tail')
-pokédexentry986 = Pokédex(id='986', name='brute-bonnet')
-pokédexentry987 = Pokédex(id='987', name='flutter-mane')
-pokédexentry988 = Pokédex(id='988', name='slither-wing')
-pokédexentry989 = Pokédex(id='989', name='sandy-shocks')
-pokédexentry990 = Pokédex(id='990', name='iron-treads')
-pokédexentry991 = Pokédex(id='991', name='iron-bundle')
-pokédexentry992 = Pokédex(id='992', name='iron-hands')
-pokédexentry993 = Pokédex(id='993', name='iron-jugulis')
-pokédexentry994 = Pokédex(id='994', name='iron-moth')
-pokédexentry995 = Pokédex(id='995', name='iron-thorns')
-pokédexentry996 = Pokédex(id='996', name='frigibax')
-pokédexentry997 = Pokédex(id='997', name='arctibax')
-pokédexentry998 = Pokédex(id='998', name='baxcalibur')
-pokédexentry999 = Pokédex(id='999', name='gimmighoul')
-pokédexentry1000 = Pokédex(id='1000', name='gholdengo')
-pokédexentry1001 = Pokédex(id='1001', name='wo-chien')
-pokédexentry1002 = Pokédex(id='1002', name='chien-pao')
-pokédexentry1003 = Pokédex(id='1003', name='ting-lu')
-pokédexentry1004 = Pokédex(id='1004', name='chi-yu')
-pokédexentry1005 = Pokédex(id='1005', name='roaring-moon')
-pokédexentry1006 = Pokédex(id='1006', name='iron-valiant')
-pokédexentry1007 = Pokédex(id='1007', name='koraidon')
-pokédexentry1008 = Pokédex(id='1008', name='miraidon')
-pokédexentry1009 = Pokédex(id='1009', name='walking-wake')
-pokédexentry1010 = Pokédex(id='1010', name='iron-leaves')
+entries = [
+    Pokédex(id='1', name='bulbasaur'),
+    Pokédex(id='2', name='ivysaur'),
+    Pokédex(id='3', name='venusaur'),
+    Pokédex(id='4', name='charmander'),
+    Pokédex(id='5', name='charmeleon'),
+    Pokédex(id='6', name='charizard'),
+    Pokédex(id='7', name='squirtle'),
+    Pokédex(id='8', name='wartortle'),
+    Pokédex(id='9', name='blastoise'),
+    Pokédex(id='10', name='caterpie'),
+    Pokédex(id='11', name='metapod'),
+    Pokédex(id='12', name='butterfree'),
+    Pokédex(id='13', name='weedle'),
+    Pokédex(id='14', name='kakuna'),
+    Pokédex(id='15', name='beedrill'),
+    Pokédex(id='16', name='pidgey'),
+    Pokédex(id='17', name='pidgeotto'),
+    Pokédex(id='18', name='pidgeot'),
+    Pokédex(id='19', name='rattata'),
+    Pokédex(id='20', name='raticate'),
+    Pokédex(id='21', name='spearow'),
+    Pokédex(id='22', name='fearow'),
+    Pokédex(id='23', name='ekans'),
+    Pokédex(id='24', name='arbok'),
+    Pokédex(id='25', name='pikachu'),
+    Pokédex(id='26', name='raichu'),
+    Pokédex(id='27', name='sandshrew'),
+    Pokédex(id='28', name='sandslash'),
+    Pokédex(id='29', name='nidoran-f'),
+    Pokédex(id='30', name='nidorina'),
+    Pokédex(id='31', name='nidoqueen'),
+    Pokédex(id='32', name='nidoran-m'),
+    Pokédex(id='33', name='nidorino'),
+    Pokédex(id='34', name='nidoking'),
+    Pokédex(id='35', name='clefairy'),
+    Pokédex(id='36', name='clefable'),
+    Pokédex(id='37', name='vulpix'),
+    Pokédex(id='38', name='ninetales'),
+    Pokédex(id='39', name='jigglypuff'),
+    Pokédex(id='40', name='wigglytuff'),
+    Pokédex(id='41', name='zubat'),
+    Pokédex(id='42', name='golbat'),
+    Pokédex(id='43', name='oddish'),
+    Pokédex(id='44', name='gloom'),
+    Pokédex(id='45', name='vileplume'),
+    Pokédex(id='46', name='paras'),
+    Pokédex(id='47', name='parasect'),
+    Pokédex(id='48', name='venonat'),
+    Pokédex(id='49', name='venomoth'),
+    Pokédex(id='50', name='diglett'),
+    Pokédex(id='51', name='dugtrio'),
+    Pokédex(id='52', name='meowth'),
+    Pokédex(id='53', name='persian'),
+    Pokédex(id='54', name='psyduck'),
+    Pokédex(id='55', name='golduck'),
+    Pokédex(id='56', name='mankey'),
+    Pokédex(id='57', name='primeape'),
+    Pokédex(id='58', name='growlithe'),
+    Pokédex(id='59', name='arcanine'),
+    Pokédex(id='60', name='poliwag'),
+    Pokédex(id='61', name='poliwhirl'),
+    Pokédex(id='62', name='poliwrath'),
+    Pokédex(id='63', name='abra'),
+    Pokédex(id='64', name='kadabra'),
+    Pokédex(id='65', name='alakazam'),
+    Pokédex(id='66', name='machop'),
+    Pokédex(id='67', name='machoke'),
+    Pokédex(id='68', name='machamp'),
+    Pokédex(id='69', name='bellsprout'),
+    Pokédex(id='70', name='weepinbell'),
+    Pokédex(id='71', name='victreebel'),
+    Pokédex(id='72', name='tentacool'),
+    Pokédex(id='73', name='tentacruel'),
+    Pokédex(id='74', name='geodude'),
+    Pokédex(id='75', name='graveler'),
+    Pokédex(id='76', name='golem'),
+    Pokédex(id='77', name='ponyta'),
+    Pokédex(id='78', name='rapidash'),
+    Pokédex(id='79', name='slowpoke'),
+    Pokédex(id='80', name='slowbro'),
+    Pokédex(id='81', name='magnemite'),
+    Pokédex(id='82', name='magneton'),
+    Pokédex(id='83', name='farfetchd'),
+    Pokédex(id='84', name='doduo'),
+    Pokédex(id='85', name='dodrio'),
+    Pokédex(id='86', name='seel'),
+    Pokédex(id='87', name='dewgong'),
+    Pokédex(id='88', name='grimer'),
+    Pokédex(id='89', name='muk'),
+    Pokédex(id='90', name='shellder'),
+    Pokédex(id='91', name='cloyster'),
+    Pokédex(id='92', name='gastly'),
+    Pokédex(id='93', name='haunter'),
+    Pokédex(id='94', name='gengar'),
+    Pokédex(id='95', name='onix'),
+    Pokédex(id='96', name='drowzee'),
+    Pokédex(id='97', name='hypno'),
+    Pokédex(id='98', name='krabby'),
+    Pokédex(id='99', name='kingler'),
+    Pokédex(id='100', name='voltorb'),
+    Pokédex(id='101', name='electrode'),
+    Pokédex(id='102', name='exeggcute'),
+    Pokédex(id='103', name='exeggutor'),
+    Pokédex(id='104', name='cubone'),
+    Pokédex(id='105', name='marowak'),
+    Pokédex(id='106', name='hitmonlee'),
+    Pokédex(id='107', name='hitmonchan'),
+    Pokédex(id='108', name='lickitung'),
+    Pokédex(id='109', name='koffing'),
+    Pokédex(id='110', name='weezing'),
+    Pokédex(id='111', name='rhyhorn'),
+    Pokédex(id='112', name='rhydon'),
+    Pokédex(id='113', name='chansey'),
+    Pokédex(id='114', name='tangela'),
+    Pokédex(id='115', name='kangaskhan'),
+    Pokédex(id='116', name='horsea'),
+    Pokédex(id='117', name='seadra'),
+    Pokédex(id='118', name='goldeen'),
+    Pokédex(id='119', name='seaking'),
+    Pokédex(id='120', name='staryu'),
+    Pokédex(id='121', name='starmie'),
+    Pokédex(id='122', name='mr-mime'),
+    Pokédex(id='123', name='scyther'),
+    Pokédex(id='124', name='jynx'),
+    Pokédex(id='125', name='electabuzz'),
+    Pokédex(id='126', name='magmar'),
+    Pokédex(id='127', name='pinsir'),
+    Pokédex(id='128', name='tauros'),
+    Pokédex(id='129', name='magikarp'),
+    Pokédex(id='130', name='gyarados'),
+    Pokédex(id='131', name='lapras'),
+    Pokédex(id='132', name='ditto'),
+    Pokédex(id='133', name='eevee'),
+    Pokédex(id='134', name='vaporeon'),
+    Pokédex(id='135', name='jolteon'),
+    Pokédex(id='136', name='flareon'),
+    Pokédex(id='137', name='porygon'),
+    Pokédex(id='138', name='omanyte'),
+    Pokédex(id='139', name='omastar'),
+    Pokédex(id='140', name='kabuto'),
+    Pokédex(id='141', name='kabutops'),
+    Pokédex(id='142', name='aerodactyl'),
+    Pokédex(id='143', name='snorlax'),
+    Pokédex(id='144', name='articuno'),
+    Pokédex(id='145', name='zapdos'),
+    Pokédex(id='146', name='moltres'),
+    Pokédex(id='147', name='dratini'),
+    Pokédex(id='148', name='dragonair'),
+    Pokédex(id='149', name='dragonite'),
+    Pokédex(id='150', name='mewtwo'),
+    Pokédex(id='151', name='mew'),
+    Pokédex(id='152', name='chikorita'),
+    Pokédex(id='153', name='bayleef'),
+    Pokédex(id='154', name='meganium'),
+    Pokédex(id='155', name='cyndaquil'),
+    Pokédex(id='156', name='quilava'),
+    Pokédex(id='157', name='typhlosion'),
+    Pokédex(id='158', name='totodile'),
+    Pokédex(id='159', name='croconaw'),
+    Pokédex(id='160', name='feraligatr'),
+    Pokédex(id='161', name='sentret'),
+    Pokédex(id='162', name='furret'),
+    Pokédex(id='163', name='hoothoot'),
+    Pokédex(id='164', name='noctowl'),
+    Pokédex(id='165', name='ledyba'),
+    Pokédex(id='166', name='ledian'),
+    Pokédex(id='167', name='spinarak'),
+    Pokédex(id='168', name='ariados'),
+    Pokédex(id='169', name='crobat'),
+    Pokédex(id='170', name='chinchou'),
+    Pokédex(id='171', name='lanturn'),
+    Pokédex(id='172', name='pichu'),
+    Pokédex(id='173', name='cleffa'),
+    Pokédex(id='174', name='igglybuff'),
+    Pokédex(id='175', name='togepi'),
+    Pokédex(id='176', name='togetic'),
+    Pokédex(id='177', name='natu'),
+    Pokédex(id='178', name='xatu'),
+    Pokédex(id='179', name='mareep'),
+    Pokédex(id='180', name='flaaffy'),
+    Pokédex(id='181', name='ampharos'),
+    Pokédex(id='182', name='bellossom'),
+    Pokédex(id='183', name='marill'),
+    Pokédex(id='184', name='azumarill'),
+    Pokédex(id='185', name='sudowoodo'),
+    Pokédex(id='186', name='politoed'),
+    Pokédex(id='187', name='hoppip'),
+    Pokédex(id='188', name='skiploom'),
+    Pokédex(id='189', name='jumpluff'),
+    Pokédex(id='190', name='aipom'),
+    Pokédex(id='191', name='sunkern'),
+    Pokédex(id='192', name='sunflora'),
+    Pokédex(id='193', name='yanma'),
+    Pokédex(id='194', name='wooper'),
+    Pokédex(id='195', name='quagsire'),
+    Pokédex(id='196', name='espeon'),
+    Pokédex(id='197', name='umbreon'),
+    Pokédex(id='198', name='murkrow'),
+    Pokédex(id='199', name='slowking'),
+    Pokédex(id='200', name='misdreavus'),
+    Pokédex(id='201', name='unown'),
+    Pokédex(id='202', name='wobbuffet'),
+    Pokédex(id='203', name='girafarig'),
+    Pokédex(id='204', name='pineco'),
+    Pokédex(id='205', name='forretress'),
+    Pokédex(id='206', name='dunsparce'),
+    Pokédex(id='207', name='gligar'),
+    Pokédex(id='208', name='steelix'),
+    Pokédex(id='209', name='snubbull'),
+    Pokédex(id='210', name='granbull'),
+    Pokédex(id='211', name='qwilfish'),
+    Pokédex(id='212', name='scizor'),
+    Pokédex(id='213', name='shuckle'),
+    Pokédex(id='214', name='heracross'),
+    Pokédex(id='215', name='sneasel'),
+    Pokédex(id='216', name='teddiursa'),
+    Pokédex(id='217', name='ursaring'),
+    Pokédex(id='218', name='slugma'),
+    Pokédex(id='219', name='magcargo'),
+    Pokédex(id='220', name='swinub'),
+    Pokédex(id='221', name='piloswine'),
+    Pokédex(id='222', name='corsola'),
+    Pokédex(id='223', name='remoraid'),
+    Pokédex(id='224', name='octillery'),
+    Pokédex(id='225', name='delibird'),
+    Pokédex(id='226', name='mantine'),
+    Pokédex(id='227', name='skarmory'),
+    Pokédex(id='228', name='houndour'),
+    Pokédex(id='229', name='houndoom'),
+    Pokédex(id='230', name='kingdra'),
+    Pokédex(id='231', name='phanpy'),
+    Pokédex(id='232', name='donphan'),
+    Pokédex(id='233', name='porygon2'),
+    Pokédex(id='234', name='stantler'),
+    Pokédex(id='235', name='smeargle'),
+    Pokédex(id='236', name='tyrogue'),
+    Pokédex(id='237', name='hitmontop'),
+    Pokédex(id='238', name='smoochum'),
+    Pokédex(id='239', name='elekid'),
+    Pokédex(id='240', name='magby'),
+    Pokédex(id='241', name='miltank'),
+    Pokédex(id='242', name='blissey'),
+    Pokédex(id='243', name='raikou'),
+    Pokédex(id='244', name='entei'),
+    Pokédex(id='245', name='suicune'),
+    Pokédex(id='246', name='larvitar'),
+    Pokédex(id='247', name='pupitar'),
+    Pokédex(id='248', name='tyranitar'),
+    Pokédex(id='249', name='lugia'),
+    Pokédex(id='250', name='ho-oh'),
+    Pokédex(id='251', name='celebi'),
+    Pokédex(id='252', name='treecko'),
+    Pokédex(id='253', name='grovyle'),
+    Pokédex(id='254', name='sceptile'),
+    Pokédex(id='255', name='torchic'),
+    Pokédex(id='256', name='combusken'),
+    Pokédex(id='257', name='blaziken'),
+    Pokédex(id='258', name='mudkip'),
+    Pokédex(id='259', name='marshtomp'),
+    Pokédex(id='260', name='swampert'),
+    Pokédex(id='261', name='poochyena'),
+    Pokédex(id='262', name='mightyena'),
+    Pokédex(id='263', name='zigzagoon'),
+    Pokédex(id='264', name='linoone'),
+    Pokédex(id='265', name='wurmple'),
+    Pokédex(id='266', name='silcoon'),
+    Pokédex(id='267', name='beautifly'),
+    Pokédex(id='268', name='cascoon'),
+    Pokédex(id='269', name='dustox'),
+    Pokédex(id='270', name='lotad'),
+    Pokédex(id='271', name='lombre'),
+    Pokédex(id='272', name='ludicolo'),
+    Pokédex(id='273', name='seedot'),
+    Pokédex(id='274', name='nuzleaf'),
+    Pokédex(id='275', name='shiftry'),
+    Pokédex(id='276', name='taillow'),
+    Pokédex(id='277', name='swellow'),
+    Pokédex(id='278', name='wingull'),
+    Pokédex(id='279', name='pelipper'),
+    Pokédex(id='280', name='ralts'),
+    Pokédex(id='281', name='kirlia'),
+    Pokédex(id='282', name='gardevoir'),
+    Pokédex(id='283', name='surskit'),
+    Pokédex(id='284', name='masquerain'),
+    Pokédex(id='285', name='shroomish'),
+    Pokédex(id='286', name='breloom'),
+    Pokédex(id='287', name='slakoth'),
+    Pokédex(id='288', name='vigoroth'),
+    Pokédex(id='289', name='slaking'),
+    Pokédex(id='290', name='nincada'),
+    Pokédex(id='291', name='ninjask'),
+    Pokédex(id='292', name='shedinja'),
+    Pokédex(id='293', name='whismur'),
+    Pokédex(id='294', name='loudred'),
+    Pokédex(id='295', name='exploud'),
+    Pokédex(id='296', name='makuhita'),
+    Pokédex(id='297', name='hariyama'),
+    Pokédex(id='298', name='azurill'),
+    Pokédex(id='299', name='nosepass'),
+    Pokédex(id='300', name='skitty'),
+    Pokédex(id='301', name='delcatty'),
+    Pokédex(id='302', name='sableye'),
+    Pokédex(id='303', name='mawile'),
+    Pokédex(id='304', name='aron'),
+    Pokédex(id='305', name='lairon'),
+    Pokédex(id='306', name='aggron'),
+    Pokédex(id='307', name='meditite'),
+    Pokédex(id='308', name='medicham'),
+    Pokédex(id='309', name='electrike'),
+    Pokédex(id='310', name='manectric'),
+    Pokédex(id='311', name='plusle'),
+    Pokédex(id='312', name='minun'),
+    Pokédex(id='313', name='volbeat'),
+    Pokédex(id='314', name='illumise'),
+    Pokédex(id='315', name='roselia'),
+    Pokédex(id='316', name='gulpin'),
+    Pokédex(id='317', name='swalot'),
+    Pokédex(id='318', name='carvanha'),
+    Pokédex(id='319', name='sharpedo'),
+    Pokédex(id='320', name='wailmer'),
+    Pokédex(id='321', name='wailord'),
+    Pokédex(id='322', name='numel'),
+    Pokédex(id='323', name='camerupt'),
+    Pokédex(id='324', name='torkoal'),
+    Pokédex(id='325', name='spoink'),
+    Pokédex(id='326', name='grumpig'),
+    Pokédex(id='327', name='spinda'),
+    Pokédex(id='328', name='trapinch'),
+    Pokédex(id='329', name='vibrava'),
+    Pokédex(id='330', name='flygon'),
+    Pokédex(id='331', name='cacnea'),
+    Pokédex(id='332', name='cacturne'),
+    Pokédex(id='333', name='swablu'),
+    Pokédex(id='334', name='altaria'),
+    Pokédex(id='335', name='zangoose'),
+    Pokédex(id='336', name='seviper'),
+    Pokédex(id='337', name='lunatone'),
+    Pokédex(id='338', name='solrock'),
+    Pokédex(id='339', name='barboach'),
+    Pokédex(id='340', name='whiscash'),
+    Pokédex(id='341', name='corphish'),
+    Pokédex(id='342', name='crawdaunt'),
+    Pokédex(id='343', name='baltoy'),
+    Pokédex(id='344', name='claydol'),
+    Pokédex(id='345', name='lileep'),
+    Pokédex(id='346', name='cradily'),
+    Pokédex(id='347', name='anorith'),
+    Pokédex(id='348', name='armaldo'),
+    Pokédex(id='349', name='feebas'),
+    Pokédex(id='350', name='milotic'),
+    Pokédex(id='351', name='castform'),
+    Pokédex(id='352', name='kecleon'),
+    Pokédex(id='353', name='shuppet'),
+    Pokédex(id='354', name='banette'),
+    Pokédex(id='355', name='duskull'),
+    Pokédex(id='356', name='dusclops'),
+    Pokédex(id='357', name='tropius'),
+    Pokédex(id='358', name='chimecho'),
+    Pokédex(id='359', name='absol'),
+    Pokédex(id='360', name='wynaut'),
+    Pokédex(id='361', name='snorunt'),
+    Pokédex(id='362', name='glalie'),
+    Pokédex(id='363', name='spheal'),
+    Pokédex(id='364', name='sealeo'),
+    Pokédex(id='365', name='walrein'),
+    Pokédex(id='366', name='clamperl'),
+    Pokédex(id='367', name='huntail'),
+    Pokédex(id='368', name='gorebyss'),
+    Pokédex(id='369', name='relicanth'),
+    Pokédex(id='370', name='luvdisc'),
+    Pokédex(id='371', name='bagon'),
+    Pokédex(id='372', name='shelgon'),
+    Pokédex(id='373', name='salamence'),
+    Pokédex(id='374', name='beldum'),
+    Pokédex(id='375', name='metang'),
+    Pokédex(id='376', name='metagross'),
+    Pokédex(id='377', name='regirock'),
+    Pokédex(id='378', name='regice'),
+    Pokédex(id='379', name='registeel'),
+    Pokédex(id='380', name='latias'),
+    Pokédex(id='381', name='latios'),
+    Pokédex(id='382', name='kyogre'),
+    Pokédex(id='383', name='groudon'),
+    Pokédex(id='384', name='rayquaza'),
+    Pokédex(id='385', name='jirachi'),
+    Pokédex(id='386', name='deoxys'),
+    Pokédex(id='387', name='turtwig'),
+    Pokédex(id='388', name='grotle'),
+    Pokédex(id='389', name='torterra'),
+    Pokédex(id='390', name='chimchar'),
+    Pokédex(id='391', name='monferno'),
+    Pokédex(id='392', name='infernape'),
+    Pokédex(id='393', name='piplup'),
+    Pokédex(id='394', name='prinplup'),
+    Pokédex(id='395', name='empoleon'),
+    Pokédex(id='396', name='starly'),
+    Pokédex(id='397', name='staravia'),
+    Pokédex(id='398', name='staraptor'),
+    Pokédex(id='399', name='bidoof'),
+    Pokédex(id='400', name='bibarel'),
+    Pokédex(id='401', name='kricketot'),
+    Pokédex(id='402', name='kricketune'),
+    Pokédex(id='403', name='shinx'),
+    Pokédex(id='404', name='luxio'),
+    Pokédex(id='405', name='luxray'),
+    Pokédex(id='406', name='budew'),
+    Pokédex(id='407', name='roserade'),
+    Pokédex(id='408', name='cranidos'),
+    Pokédex(id='409', name='rampardos'),
+    Pokédex(id='410', name='shieldon'),
+    Pokédex(id='411', name='bastiodon'),
+    Pokédex(id='412', name='burmy'),
+    Pokédex(id='413', name='wormadam'),
+    Pokédex(id='414', name='mothim'),
+    Pokédex(id='415', name='combee'),
+    Pokédex(id='416', name='vespiquen'),
+    Pokédex(id='417', name='pachirisu'),
+    Pokédex(id='418', name='buizel'),
+    Pokédex(id='419', name='floatzel'),
+    Pokédex(id='420', name='cherubi'),
+    Pokédex(id='421', name='cherrim'),
+    Pokédex(id='422', name='shellos'),
+    Pokédex(id='423', name='gastrodon'),
+    Pokédex(id='424', name='ambipom'),
+    Pokédex(id='425', name='drifloon'),
+    Pokédex(id='426', name='drifblim'),
+    Pokédex(id='427', name='buneary'),
+    Pokédex(id='428', name='lopunny'),
+    Pokédex(id='429', name='mismagius'),
+    Pokédex(id='430', name='honchkrow'),
+    Pokédex(id='431', name='glameow'),
+    Pokédex(id='432', name='purugly'),
+    Pokédex(id='433', name='chingling'),
+    Pokédex(id='434', name='stunky'),
+    Pokédex(id='435', name='skuntank'),
+    Pokédex(id='436', name='bronzor'),
+    Pokédex(id='437', name='bronzong'),
+    Pokédex(id='438', name='bonsly'),
+    Pokédex(id='439', name='mime-jr'),
+    Pokédex(id='440', name='happiny'),
+    Pokédex(id='441', name='chatot'),
+    Pokédex(id='442', name='spiritomb'),
+    Pokédex(id='443', name='gible'),
+    Pokédex(id='444', name='gabite'),
+    Pokédex(id='445', name='garchomp'),
+    Pokédex(id='446', name='munchlax'),
+    Pokédex(id='447', name='riolu'),
+    Pokédex(id='448', name='lucario'),
+    Pokédex(id='449', name='hippopotas'),
+    Pokédex(id='450', name='hippowdon'),
+    Pokédex(id='451', name='skorupi'),
+    Pokédex(id='452', name='drapion'),
+    Pokédex(id='453', name='croagunk'),
+    Pokédex(id='454', name='toxicroak'),
+    Pokédex(id='455', name='carnivine'),
+    Pokédex(id='456', name='finneon'),
+    Pokédex(id='457', name='lumineon'),
+    Pokédex(id='458', name='mantyke'),
+    Pokédex(id='459', name='snover'),
+    Pokédex(id='460', name='abomasnow'),
+    Pokédex(id='461', name='weavile'),
+    Pokédex(id='462', name='magnezone'),
+    Pokédex(id='463', name='lickilicky'),
+    Pokédex(id='464', name='rhyperior'),
+    Pokédex(id='465', name='tangrowth'),
+    Pokédex(id='466', name='electivire'),
+    Pokédex(id='467', name='magmortar'),
+    Pokédex(id='468', name='togekiss'),
+    Pokédex(id='469', name='yanmega'),
+    Pokédex(id='470', name='leafeon'),
+    Pokédex(id='471', name='glaceon'),
+    Pokédex(id='472', name='gliscor'),
+    Pokédex(id='473', name='mamoswine'),
+    Pokédex(id='474', name='porygon-z'),
+    Pokédex(id='475', name='gallade'),
+    Pokédex(id='476', name='probopass'),
+    Pokédex(id='477', name='dusknoir'),
+    Pokédex(id='478', name='froslass'),
+    Pokédex(id='479', name='rotom'),
+    Pokédex(id='480', name='uxie'),
+    Pokédex(id='481', name='mesprit'),
+    Pokédex(id='482', name='azelf'),
+    Pokédex(id='483', name='dialga'),
+    Pokédex(id='484', name='palkia'),
+    Pokédex(id='485', name='heatran'),
+    Pokédex(id='486', name='regigigas'),
+    Pokédex(id='487', name='giratina'),
+    Pokédex(id='488', name='cresselia'),
+    Pokédex(id='489', name='phione'),
+    Pokédex(id='490', name='manaphy'),
+    Pokédex(id='491', name='darkrai'),
+    Pokédex(id='492', name='shaymin'),
+    Pokédex(id='493', name='arceus'),
+    Pokédex(id='494', name='victini'),
+    Pokédex(id='495', name='snivy'),
+    Pokédex(id='496', name='servine'),
+    Pokédex(id='497', name='serperior'),
+    Pokédex(id='498', name='tepig'),
+    Pokédex(id='499', name='pignite'),
+    Pokédex(id='500', name='emboar'),
+    Pokédex(id='501', name='oshawott'),
+    Pokédex(id='502', name='dewott'),
+    Pokédex(id='503', name='samurott'),
+    Pokédex(id='504', name='patrat'),
+    Pokédex(id='505', name='watchog'),
+    Pokédex(id='506', name='lillipup'),
+    Pokédex(id='507', name='herdier'),
+    Pokédex(id='508', name='stoutland'),
+    Pokédex(id='509', name='purrloin'),
+    Pokédex(id='510', name='liepard'),
+    Pokédex(id='511', name='pansage'),
+    Pokédex(id='512', name='simisage'),
+    Pokédex(id='513', name='pansear'),
+    Pokédex(id='514', name='simisear'),
+    Pokédex(id='515', name='panpour'),
+    Pokédex(id='516', name='simipour'),
+    Pokédex(id='517', name='munna'),
+    Pokédex(id='518', name='musharna'),
+    Pokédex(id='519', name='pidove'),
+    Pokédex(id='520', name='tranquill'),
+    Pokédex(id='521', name='unfezant'),
+    Pokédex(id='522', name='blitzle'),
+    Pokédex(id='523', name='zebstrika'),
+    Pokédex(id='524', name='roggenrola'),
+    Pokédex(id='525', name='boldore'),
+    Pokédex(id='526', name='gigalith'),
+    Pokédex(id='527', name='woobat'),
+    Pokédex(id='528', name='swoobat'),
+    Pokédex(id='529', name='drilbur'),
+    Pokédex(id='530', name='excadrill'),
+    Pokédex(id='531', name='audino'),
+    Pokédex(id='532', name='timburr'),
+    Pokédex(id='533', name='gurdurr'),
+    Pokédex(id='534', name='conkeldurr'),
+    Pokédex(id='535', name='tympole'),
+    Pokédex(id='536', name='palpitoad'),
+    Pokédex(id='537', name='seismitoad'),
+    Pokédex(id='538', name='throh'),
+    Pokédex(id='539', name='sawk'),
+    Pokédex(id='540', name='sewaddle'),
+    Pokédex(id='541', name='swadloon'),
+    Pokédex(id='542', name='leavanny'),
+    Pokédex(id='543', name='venipede'),
+    Pokédex(id='544', name='whirlipede'),
+    Pokédex(id='545', name='scolipede'),
+    Pokédex(id='546', name='cottonee'),
+    Pokédex(id='547', name='whimsicott'),
+    Pokédex(id='548', name='petilil'),
+    Pokédex(id='549', name='lilligant'),
+    Pokédex(id='550', name='basculin'),
+    Pokédex(id='551', name='sandile'),
+    Pokédex(id='552', name='krokorok'),
+    Pokédex(id='553', name='krookodile'),
+    Pokédex(id='554', name='darumaka'),
+    Pokédex(id='555', name='darmanitan'),
+    Pokédex(id='556', name='maractus'),
+    Pokédex(id='557', name='dwebble'),
+    Pokédex(id='558', name='crustle'),
+    Pokédex(id='559', name='scraggy'),
+    Pokédex(id='560', name='scrafty'),
+    Pokédex(id='561', name='sigilyph'),
+    Pokédex(id='562', name='yamask'),
+    Pokédex(id='563', name='cofagrigus'),
+    Pokédex(id='564', name='tirtouga'),
+    Pokédex(id='565', name='carracosta'),
+    Pokédex(id='566', name='archen'),
+    Pokédex(id='567', name='archeops'),
+    Pokédex(id='568', name='trubbish'),
+    Pokédex(id='569', name='garbodor'),
+    Pokédex(id='570', name='zorua'),
+    Pokédex(id='571', name='zoroark'),
+    Pokédex(id='572', name='minccino'),
+    Pokédex(id='573', name='cinccino'),
+    Pokédex(id='574', name='gothita'),
+    Pokédex(id='575', name='gothorita'),
+    Pokédex(id='576', name='gothitelle'),
+    Pokédex(id='577', name='solosis'),
+    Pokédex(id='578', name='duosion'),
+    Pokédex(id='579', name='reuniclus'),
+    Pokédex(id='580', name='ducklett'),
+    Pokédex(id='581', name='swanna'),
+    Pokédex(id='582', name='vanillite'),
+    Pokédex(id='583', name='vanillish'),
+    Pokédex(id='584', name='vanilluxe'),
+    Pokédex(id='585', name='deerling'),
+    Pokédex(id='586', name='sawsbuck'),
+    Pokédex(id='587', name='emolga'),
+    Pokédex(id='588', name='karrablast'),
+    Pokédex(id='589', name='escavalier'),
+    Pokédex(id='590', name='foongus'),
+    Pokédex(id='591', name='amoonguss'),
+    Pokédex(id='592', name='frillish'),
+    Pokédex(id='593', name='jellicent'),
+    Pokédex(id='594', name='alomomola'),
+    Pokédex(id='595', name='joltik'),
+    Pokédex(id='596', name='galvantula'),
+    Pokédex(id='597', name='ferroseed'),
+    Pokédex(id='598', name='ferrothorn'),
+    Pokédex(id='599', name='klink'),
+    Pokédex(id='600', name='klang'),
+    Pokédex(id='601', name='klinklang'),
+    Pokédex(id='602', name='tynamo'),
+    Pokédex(id='603', name='eelektrik'),
+    Pokédex(id='604', name='eelektross'),
+    Pokédex(id='605', name='elgyem'),
+    Pokédex(id='606', name='beheeyem'),
+    Pokédex(id='607', name='litwick'),
+    Pokédex(id='608', name='lampent'),
+    Pokédex(id='609', name='chandelure'),
+    Pokédex(id='610', name='axew'),
+    Pokédex(id='611', name='fraxure'),
+    Pokédex(id='612', name='haxorus'),
+    Pokédex(id='613', name='cubchoo'),
+    Pokédex(id='614', name='beartic'),
+    Pokédex(id='615', name='cryogonal'),
+    Pokédex(id='616', name='shelmet'),
+    Pokédex(id='617', name='accelgor'),
+    Pokédex(id='618', name='stunfisk'),
+    Pokédex(id='619', name='mienfoo'),
+    Pokédex(id='620', name='mienshao'),
+    Pokédex(id='621', name='druddigon'),
+    Pokédex(id='622', name='golett'),
+    Pokédex(id='623', name='golurk'),
+    Pokédex(id='624', name='pawniard'),
+    Pokédex(id='625', name='bisharp'),
+    Pokédex(id='626', name='bouffalant'),
+    Pokédex(id='627', name='rufflet'),
+    Pokédex(id='628', name='braviary'),
+    Pokédex(id='629', name='vullaby'),
+    Pokédex(id='630', name='mandibuzz'),
+    Pokédex(id='631', name='heatmor'),
+    Pokédex(id='632', name='durant'),
+    Pokédex(id='633', name='deino'),
+    Pokédex(id='634', name='zweilous'),
+    Pokédex(id='635', name='hydreigon'),
+    Pokédex(id='636', name='larvesta'),
+    Pokédex(id='637', name='volcarona'),
+    Pokédex(id='638', name='cobalion'),
+    Pokédex(id='639', name='terrakion'),
+    Pokédex(id='640', name='virizion'),
+    Pokédex(id='641', name='tornadus'),
+    Pokédex(id='642', name='thundurus'),
+    Pokédex(id='643', name='reshiram'),
+    Pokédex(id='644', name='zekrom'),
+    Pokédex(id='645', name='landorus'),
+    Pokédex(id='646', name='kyurem'),
+    Pokédex(id='647', name='keldeo'),
+    Pokédex(id='648', name='meloetta'),
+    Pokédex(id='649', name='genesect'),
+    Pokédex(id='650', name='chespin'),
+    Pokédex(id='651', name='quilladin'),
+    Pokédex(id='652', name='chesnaught'),
+    Pokédex(id='653', name='fennekin'),
+    Pokédex(id='654', name='braixen'),
+    Pokédex(id='655', name='delphox'),
+    Pokédex(id='656', name='froakie'),
+    Pokédex(id='657', name='frogadier'),
+    Pokédex(id='658', name='greninja'),
+    Pokédex(id='659', name='bunnelby'),
+    Pokédex(id='660', name='diggersby'),
+    Pokédex(id='661', name='fletchling'),
+    Pokédex(id='662', name='fletchinder'),
+    Pokédex(id='663', name='talonflame'),
+    Pokédex(id='664', name='scatterbug'),
+    Pokédex(id='665', name='spewpa'),
+    Pokédex(id='666', name='vivillon'),
+    Pokédex(id='667', name='litleo'),
+    Pokédex(id='668', name='pyroar'),
+    Pokédex(id='669', name='flabebe'),
+    Pokédex(id='670', name='floette'),
+    Pokédex(id='671', name='florges'),
+    Pokédex(id='672', name='skiddo'),
+    Pokédex(id='673', name='gogoat'),
+    Pokédex(id='674', name='pancham'),
+    Pokédex(id='675', name='pangoro'),
+    Pokédex(id='676', name='furfrou'),
+    Pokédex(id='677', name='espurr'),
+    Pokédex(id='678', name='meowstic'),
+    Pokédex(id='679', name='honedge'),
+    Pokédex(id='680', name='doublade'),
+    Pokédex(id='681', name='aegislash'),
+    Pokédex(id='682', name='spritzee'),
+    Pokédex(id='683', name='aromatisse'),
+    Pokédex(id='684', name='swirlix'),
+    Pokédex(id='685', name='slurpuff'),
+    Pokédex(id='686', name='inkay'),
+    Pokédex(id='687', name='malamar'),
+    Pokédex(id='688', name='binacle'),
+    Pokédex(id='689', name='barbaracle'),
+    Pokédex(id='690', name='skrelp'),
+    Pokédex(id='691', name='dragalge'),
+    Pokédex(id='692', name='clauncher'),
+    Pokédex(id='693', name='clawitzer'),
+    Pokédex(id='694', name='helioptile'),
+    Pokédex(id='695', name='heliolisk'),
+    Pokédex(id='696', name='tyrunt'),
+    Pokédex(id='697', name='tyrantrum'),
+    Pokédex(id='698', name='amaura'),
+    Pokédex(id='699', name='aurorus'),
+    Pokédex(id='700', name='sylveon'),
+    Pokédex(id='701', name='hawlucha'),
+    Pokédex(id='702', name='dedenne'),
+    Pokédex(id='703', name='carbink'),
+    Pokédex(id='704', name='goomy'),
+    Pokédex(id='705', name='sliggoo'),
+    Pokédex(id='706', name='goodra'),
+    Pokédex(id='707', name='klefki'),
+    Pokédex(id='708', name='phantump'),
+    Pokédex(id='709', name='trevenant'),
+    Pokédex(id='710', name='pumpkaboo'),
+    Pokédex(id='711', name='gourgeist'),
+    Pokédex(id='712', name='bergmite'),
+    Pokédex(id='713', name='avalugg'),
+    Pokédex(id='714', name='noibat'),
+    Pokédex(id='715', name='noivern'),
+    Pokédex(id='716', name='xerneas'),
+    Pokédex(id='717', name='yveltal'),
+    Pokédex(id='718', name='zygarde'),
+    Pokédex(id='719', name='diancie'),
+    Pokédex(id='720', name='hoopa'),
+    Pokédex(id='721', name='volcanion'),
+    Pokédex(id='722', name='rowlet'),
+    Pokédex(id='723', name='dartrix'),
+    Pokédex(id='724', name='decidueye'),
+    Pokédex(id='725', name='litten'),
+    Pokédex(id='726', name='torracat'),
+    Pokédex(id='727', name='incineroar'),
+    Pokédex(id='728', name='popplio'),
+    Pokédex(id='729', name='brionne'),
+    Pokédex(id='730', name='primarina'),
+    Pokédex(id='731', name='pikipek'),
+    Pokédex(id='732', name='trumbeak'),
+    Pokédex(id='733', name='toucannon'),
+    Pokédex(id='734', name='yungoos'),
+    Pokédex(id='735', name='gumshoos'),
+    Pokédex(id='736', name='grubbin'),
+    Pokédex(id='737', name='charjabug'),
+    Pokédex(id='738', name='vikavolt'),
+    Pokédex(id='739', name='crabrawler'),
+    Pokédex(id='740', name='crabominable'),
+    Pokédex(id='741', name='oricorio'),
+    Pokédex(id='742', name='cutiefly'),
+    Pokédex(id='743', name='ribombee'),
+    Pokédex(id='744', name='rockruff'),
+    Pokédex(id='745', name='lycanroc'),
+    Pokédex(id='746', name='wishiwashi'),
+    Pokédex(id='747', name='mareanie'),
+    Pokédex(id='748', name='toxapex'),
+    Pokédex(id='749', name='mudbray'),
+    Pokédex(id='750', name='mudsdale'),
+    Pokédex(id='751', name='dewpider'),
+    Pokédex(id='752', name='araquanid'),
+    Pokédex(id='753', name='fomantis'),
+    Pokédex(id='754', name='lurantis'),
+    Pokédex(id='755', name='morelull'),
+    Pokédex(id='756', name='shiinotic'),
+    Pokédex(id='757', name='salandit'),
+    Pokédex(id='758', name='salazzle'),
+    Pokédex(id='759', name='stufful'),
+    Pokédex(id='760', name='bewear'),
+    Pokédex(id='761', name='bounsweet'),
+    Pokédex(id='762', name='steenee'),
+    Pokédex(id='763', name='tsareena'),
+    Pokédex(id='764', name='comfey'),
+    Pokédex(id='765', name='oranguru'),
+    Pokédex(id='766', name='passimian'),
+    Pokédex(id='767', name='wimpod'),
+    Pokédex(id='768', name='golisopod'),
+    Pokédex(id='769', name='sandygast'),
+    Pokédex(id='770', name='palossand'),
+    Pokédex(id='771', name='pyukumuku'),
+    Pokédex(id='772', name='type-null'),
+    Pokédex(id='773', name='silvally'),
+    Pokédex(id='774', name='minior'),
+    Pokédex(id='775', name='komala'),
+    Pokédex(id='776', name='turtonator'),
+    Pokédex(id='777', name='togedemaru'),
+    Pokédex(id='778', name='mimikyu'),
+    Pokédex(id='779', name='bruxish'),
+    Pokédex(id='780', name='drampa'),
+    Pokédex(id='781', name='dhelmise'),
+    Pokédex(id='782', name='jangmo-o'),
+    Pokédex(id='783', name='hakamo-o'),
+    Pokédex(id='784', name='kommo-o'),
+    Pokédex(id='785', name='tapu-koko'),
+    Pokédex(id='786', name='tapu-lele'),
+    Pokédex(id='787', name='tapu-bulu'),
+    Pokédex(id='788', name='tapu-fini'),
+    Pokédex(id='789', name='cosmog'),
+    Pokédex(id='790', name='cosmoem'),
+    Pokédex(id='791', name='solgaleo'),
+    Pokédex(id='792', name='lunala'),
+    Pokédex(id='793', name='nihilego'),
+    Pokédex(id='794', name='buzzwole'),
+    Pokédex(id='795', name='pheromosa'),
+    Pokédex(id='796', name='xurkitree'),
+    Pokédex(id='797', name='celesteela'),
+    Pokédex(id='798', name='kartana'),
+    Pokédex(id='799', name='guzzlord'),
+    Pokédex(id='800', name='necrozma'),
+    Pokédex(id='801', name='magearna'),
+    Pokédex(id='802', name='marshadow'),
+    Pokédex(id='803', name='poipole'),
+    Pokédex(id='804', name='naganadel'),
+    Pokédex(id='805', name='stakataka'),
+    Pokédex(id='806', name='blacephalon'),
+    Pokédex(id='807', name='zeraora'),
+    Pokédex(id='808', name='meltan'),
+    Pokédex(id='809', name='melmetal'),
+    Pokédex(id='810', name='grookey'),
+    Pokédex(id='811', name='thwackey'),
+    Pokédex(id='812', name='rillaboom'),
+    Pokédex(id='813', name='scorbunny'),
+    Pokédex(id='814', name='raboot'),
+    Pokédex(id='815', name='cinderace'),
+    Pokédex(id='816', name='sobble'),
+    Pokédex(id='817', name='drizzile'),
+    Pokédex(id='818', name='inteleon'),
+    Pokédex(id='819', name='skwovet'),
+    Pokédex(id='820', name='greedent'),
+    Pokédex(id='821', name='rookidee'),
+    Pokédex(id='822', name='corvisquire'),
+    Pokédex(id='823', name='corviknight'),
+    Pokédex(id='824', name='blipbug'),
+    Pokédex(id='825', name='dottler'),
+    Pokédex(id='826', name='orbeetle'),
+    Pokédex(id='827', name='nickit'),
+    Pokédex(id='828', name='thievul'),
+    Pokédex(id='829', name='gossifleur'),
+    Pokédex(id='830', name='eldegoss'),
+    Pokédex(id='831', name='wooloo'),
+    Pokédex(id='832', name='dubwool'),
+    Pokédex(id='833', name='chewtle'),
+    Pokédex(id='834', name='drednaw'),
+    Pokédex(id='835', name='yamper'),
+    Pokédex(id='836', name='boltund'),
+    Pokédex(id='837', name='rolycoly'),
+    Pokédex(id='838', name='carkol'),
+    Pokédex(id='839', name='coalossal'),
+    Pokédex(id='840', name='applin'),
+    Pokédex(id='841', name='flapple'),
+    Pokédex(id='842', name='appletun'),
+    Pokédex(id='843', name='silicobra'),
+    Pokédex(id='844', name='sandaconda'),
+    Pokédex(id='845', name='cramorant'),
+    Pokédex(id='846', name='arrokuda'),
+    Pokédex(id='847', name='barraskewda'),
+    Pokédex(id='848', name='toxel'),
+    Pokédex(id='849', name='toxtricity'),
+    Pokédex(id='850', name='sizzlipede'),
+    Pokédex(id='851', name='centiskorch'),
+    Pokédex(id='852', name='clobbopus'),
+    Pokédex(id='853', name='grapploct'),
+    Pokédex(id='854', name='sinistea'),
+    Pokédex(id='855', name='polteageist'),
+    Pokédex(id='856', name='hatenna'),
+    Pokédex(id='857', name='hattrem'),
+    Pokédex(id='858', name='hatterene'),
+    Pokédex(id='859', name='impidimp'),
+    Pokédex(id='860', name='morgrem'),
+    Pokédex(id='861', name='grimmsnarl'),
+    Pokédex(id='862', name='obstagoon'),
+    Pokédex(id='863', name='perrserker'),
+    Pokédex(id='864', name='cursola'),
+    Pokédex(id='865', name='sirfetchd'),
+    Pokédex(id='866', name='mr-rime'),
+    Pokédex(id='867', name='runerigus'),
+    Pokédex(id='868', name='milcery'),
+    Pokédex(id='869', name='alcremie'),
+    Pokédex(id='870', name='falinks'),
+    Pokédex(id='871', name='pincurchin'),
+    Pokédex(id='872', name='snom'),
+    Pokédex(id='873', name='frosmoth'),
+    Pokédex(id='874', name='stonjourner'),
+    Pokédex(id='875', name='eiscue'),
+    Pokédex(id='876', name='indeedee'),
+    Pokédex(id='877', name='morpeko'),
+    Pokédex(id='878', name='cufant'),
+    Pokédex(id='879', name='copperajah'),
+    Pokédex(id='880', name='dracozolt'),
+    Pokédex(id='881', name='arctozolt'),
+    Pokédex(id='882', name='dracovish'),
+    Pokédex(id='883', name='arctovish'),
+    Pokédex(id='884', name='duraludon'),
+    Pokédex(id='885', name='dreepy'),
+    Pokédex(id='886', name='drakloak'),
+    Pokédex(id='887', name='dragapult'),
+    Pokédex(id='888', name='zacian'),
+    Pokédex(id='889', name='zamazenta'),
+    Pokédex(id='890', name='eternatus'),
+    Pokédex(id='891', name='kubfu'),
+    Pokédex(id='892', name='urshifu'),
+    Pokédex(id='893', name='zarude'),
+    Pokédex(id='894', name='regieleki'),
+    Pokédex(id='895', name='regidrago'),
+    Pokédex(id='896', name='glastrier'),
+    Pokédex(id='897', name='spectrier'),
+    Pokédex(id='898', name='calyrex'),
+    Pokédex(id='899', name='wyrdeer'),
+    Pokédex(id='900', name='kleavor'),
+    Pokédex(id='901', name='ursaluna'),
+    Pokédex(id='902', name='basculegion'),
+    Pokédex(id='903', name='sneasler'),
+    Pokédex(id='904', name='overqwil'),
+    Pokédex(id='905', name='enamorus'),
+    Pokédex(id='906', name='sprigatito'),
+    Pokédex(id='907', name='floragato'),
+    Pokédex(id='908', name='meowscarada'),
+    Pokédex(id='909', name='fuecoco'),
+    Pokédex(id='910', name='crocalor'),
+    Pokédex(id='911', name='skeledirge'),
+    Pokédex(id='912', name='quaxly'),
+    Pokédex(id='913', name='quaxwell'),
+    Pokédex(id='914', name='quaquaval'),
+    Pokédex(id='915', name='lechonk'),
+    Pokédex(id='916', name='oinkologne'),
+    Pokédex(id='917', name='tarountula'),
+    Pokédex(id='918', name='spidops'),
+    Pokédex(id='919', name='nymble'),
+    Pokédex(id='920', name='lokix'),
+    Pokédex(id='921', name='pawmi'),
+    Pokédex(id='922', name='pawmo'),
+    Pokédex(id='923', name='pawmot'),
+    Pokédex(id='924', name='tandemaus'),
+    Pokédex(id='925', name='maushold'),
+    Pokédex(id='926', name='fidough'),
+    Pokédex(id='927', name='dachsbun'),
+    Pokédex(id='928', name='smoliv'),
+    Pokédex(id='929', name='dolliv'),
+    Pokédex(id='930', name='arboliva'),
+    Pokédex(id='931', name='squawkabilly'),
+    Pokédex(id='932', name='nacli'),
+    Pokédex(id='933', name='naclstack'),
+    Pokédex(id='934', name='garganacl'),
+    Pokédex(id='935', name='charcadet'),
+    Pokédex(id='936', name='armarouge'),
+    Pokédex(id='937', name='ceruledge'),
+    Pokédex(id='938', name='tadbulb'),
+    Pokédex(id='939', name='bellibolt'),
+    Pokédex(id='940', name='wattrel'),
+    Pokédex(id='941', name='kilowattrel'),
+    Pokédex(id='942', name='maschiff'),
+    Pokédex(id='943', name='mabosstiff'),
+    Pokédex(id='944', name='shroodle'),
+    Pokédex(id='945', name='grafaiai'),
+    Pokédex(id='946', name='bramblin'),
+    Pokédex(id='947', name='brambleghast'),
+    Pokédex(id='948', name='toedscool'),
+    Pokédex(id='949', name='toedscruel'),
+    Pokédex(id='950', name='klawf'),
+    Pokédex(id='951', name='capsakid'),
+    Pokédex(id='952', name='scovillain'),
+    Pokédex(id='953', name='rellor'),
+    Pokédex(id='954', name='rabsca'),
+    Pokédex(id='955', name='flittle'),
+    Pokédex(id='956', name='espathra'),
+    Pokédex(id='957', name='tinkatink'),
+    Pokédex(id='958', name='tinkatuff'),
+    Pokédex(id='959', name='tinkaton'),
+    Pokédex(id='960', name='wiglett'),
+    Pokédex(id='961', name='wugtrio'),
+    Pokédex(id='962', name='bombirdier'),
+    Pokédex(id='963', name='finizen'),
+    Pokédex(id='964', name='palafin'),
+    Pokédex(id='965', name='varoom'),
+    Pokédex(id='966', name='revavroom'),
+    Pokédex(id='967', name='cyclizar'),
+    Pokédex(id='968', name='orthworm'),
+    Pokédex(id='969', name='glimmet'),
+    Pokédex(id='970', name='glimmora'),
+    Pokédex(id='971', name='greavard'),
+    Pokédex(id='972', name='houndstone'),
+    Pokédex(id='973', name='flamigo'),
+    Pokédex(id='974', name='cetoddle'),
+    Pokédex(id='975', name='cetitan'),
+    Pokédex(id='976', name='veluza'),
+    Pokédex(id='977', name='dondozo'),
+    Pokédex(id='978', name='tatsugiri'),
+    Pokédex(id='979', name='annihilape'),
+    Pokédex(id='980', name='clodsire'),
+    Pokédex(id='981', name='farigiraf'),
+    Pokédex(id='982', name='dudunsparce'),
+    Pokédex(id='983', name='kingambit'),
+    Pokédex(id='984', name='great-tusk'),
+    Pokédex(id='985', name='scream-tail'),
+    Pokédex(id='986', name='brute-bonnet'),
+    Pokédex(id='987', name='flutter-mane'),
+    Pokédex(id='988', name='slither-wing'),
+    Pokédex(id='989', name='sandy-shocks'),
+    Pokédex(id='990', name='iron-treads'),
+    Pokédex(id='991', name='iron-bundle'),
+    Pokédex(id='992', name='iron-hands'),
+    Pokédex(id='993', name='iron-jugulis'),
+    Pokédex(id='994', name='iron-moth'),
+    Pokédex(id='995', name='iron-thorns'),
+    Pokédex(id='996', name='frigibax'),
+    Pokédex(id='997', name='arctibax'),
+    Pokédex(id='998', name='baxcalibur'),
+    Pokédex(id='999', name='gimmighoul'),
+    Pokédex(id='1000', name='gholdengo'),
+    Pokédex(id='1001', name='wo-chien'),
+    Pokédex(id='1002', name='chien-pao'),
+    Pokédex(id='1003', name='ting-lu'),
+    Pokédex(id='1004', name='chi-yu'),
+    Pokédex(id='1005', name='roaring-moon'),
+    Pokédex(id='1006', name='iron-valiant'),
+    Pokédex(id='1007', name='koraidon'),
+    Pokédex(id='1008', name='miraidon'),
+    Pokédex(id='1009', name='walking-wake'),
+    Pokédex(id='1010', name='iron-leaves')
+]
+db.session.add(entries)
+db.session.commit()
