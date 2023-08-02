@@ -34,7 +34,8 @@
       </li>
 
     <li><label for="treatment_notes">Treatment Notes:</label>
-      <input type="text" id="treatment_notes" name="treatment_notes" {% if single_pokémon.treatment_notes !=None %}value="{{single_pokémon.treatment_notes}}">{% endif %}>
+      <br>
+      <textarea id="treatment_notes" name="treatment_notes" rows="10">{% if single_pokémon.treatment_notes !=None %}{{single_pokémon.treatment_notes}}{% endif %}</textarea>
     </li>
     
       <button class="primary__button" type="submit">Update Pokémon</button>

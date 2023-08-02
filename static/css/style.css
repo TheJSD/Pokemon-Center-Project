@@ -49,3 +49,14 @@ body {
 .welcome {
   padding: 1rem 0rem;
 }
+
+.welcome__header {
+  display: flex;
+  justify-content: center;
+}
+
+.welcome__subheader {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0rem
+}
