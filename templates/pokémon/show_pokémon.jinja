@@ -8,6 +8,7 @@
   {% endif %}</h1>
     <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/{{single_pokémon.species}}.png" height="200px">
     <ul>
+    <li>Pokédex Entry: #{{single_pokémon.species}}</li>
     <li>Trainer: <a href="/trainers/{{trainer.id}}">{{trainer.name}}</a>
     {% if trainer==none %}
       This Pokémon is missing a trainer!
@@ -26,7 +27,7 @@
     {% else %}
       This Pokémon has not been assigned a nurse
     {% endif %}</p>
-    <h3 class="title">Treatment Notes: </h3>
+    <h3 class="">Treatment Notes: </h3>
     {% if single_pokémon.treatment_notes == None %}
       <p>There are no treatment notes.</p>
     {% else %}
