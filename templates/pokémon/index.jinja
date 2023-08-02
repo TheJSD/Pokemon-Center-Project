@@ -11,7 +11,7 @@
     <li class="list__item">
     {% if single_pokémon.nickname is not none %}
         <ul>
-          <li>Name: <a href="/pokémon/{{single_pokémon.id}}">{{single_pokémon.nickname}} ({{single_pokémon.dex.name|capitalize}})</a></li>
+          <li>Name: <a href="/pokémon/{{single_pokémon.id}}">{{single_pokémon.nickname}}</a> ({{single_pokémon.dex.name|capitalize}})</li>
         
       
     {% else %}
