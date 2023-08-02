@@ -17,8 +17,7 @@ import re
 
 def id_from_string(string):
     id = ""
-    resultlist = [letter for letter in string]
-    for letter in resultlist:
+    for letter in string:
         match = re.match("[0-9]", letter)
         if match:
           id += letter

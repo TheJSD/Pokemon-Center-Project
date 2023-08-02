@@ -7,36 +7,38 @@
     <h1>Update {{single_pokémon.dex.name|capitalize}}</h1>
   {% endif %}
   <ul>
-  <form action="/pokémon/{{single_pokémon.id}}" method="POST">
-
-    <li><label for="species">Pokémon Species:</label>
-    <input list="pokédexentries" id="species" name="species" required value="#{{single_pokémon.dex.id}}: {{single_pokémon.dex.name|capitalize}}">
-    <datalist id="pokédexentries">
-    {% for entry in pokédex %}
-      <option {% if single_pokémon.dex.id == entry.id %}
-        {% endif %}>#{{entry.id}}: {{entry.name|capitalize}}</option>
-    {% endfor %}
-    </datalist>
-    </li>
+    <form action="/pokémon/{{single_pokémon.id}}" method="POST">
+      <li><label for="species">Pokémon Species:</label>
+        <input list="pokédexentries" id="species" name="species" required value="#{{single_pokémon.dex.id}}: {{single_pokémon.dex.name|capitalize}}">
+        <datalist id="pokédexentries">
+          {% for entry in pokédex %}
+            <option {% if single_pokémon.dex.id == entry.id %}{% endif %}>
+            #{{entry.id}}: {{entry.name|capitalize}}</option>
+          {% endfor %}
+        </datalist>
+      </li>
     
-    <li><label for="nickname">Nickname:</label>
-    <input type="text" id="nickname" name="nickname" {% if single_pokémon.nickname != None %}Value="{{single_pokémon.nickname}}"{% endif %}></li>
+      <li><label for="nickname">Nickname:</label>
+        <input type="text" id="nickname" name="nickname" {% if single_pokémon.nickname != None %}Value="{{single_pokémon.nickname}}"{% endif %}></li>
 
-    <li><label for="trainer">Trainer:</label>
-    <select name="trainer", id="trainer">
-      {% for trainer in trainers %}
-        <option value={{trainer.id}} {% if trainer.id == single_pokémon.trainer %}selected{% endif %}>{{trainer.name}}</option>
-      {% endfor %}
-    </select></li>
+      <li><label for="trainer">Trainer:</label>
+        <select name="trainer", id="trainer">
+          {% for trainer in trainers %}
+            <option value={{trainer.id}} {% if trainer.id == single_pokémon.trainer %}selected{% endif %}>{{trainer.name}}</option>
+          {% endfor %}
+        </select>
+      </li>
 
-    <li><label for="date_of_birth">Date of Birth (DD/MM/YYYY):</label>
-    <input type="text" id="date_of_birth" name="date_of_birth" {% if single_pokémon.dob != None %}Value="{{single_pokémon.dob}}"{% endif %}></li>
+      <li><label for="date_of_birth">Date of Birth (DD/MM/YYYY):</label>
+        <input type="text" id="date_of_birth" name="date_of_birth" {% if single_pokémon.dob != None %}Value="{{single_pokémon.dob}}"{% endif %}>
+      </li>
 
     <li><label for="treatment_notes">Treatment Notes:</label>
-    <input type="text" id="treatment_notes" name="treatment_notes" {% if single_pokémon.treatment_notes !=None %}value="{{single_pokémon.treatment_notes}}">{% endif %}></li>
+      <input type="text" id="treatment_notes" name="treatment_notes" {% if single_pokémon.treatment_notes !=None %}value="{{single_pokémon.treatment_notes}}">{% endif %}>
+    </li>
     
-    <button class="primary__button" type="submit">Update Pokémon</button>
-  </form>
+      <button class="primary__button" type="submit">Update Pokémon</button>
+    </form>
   </ul>
   </div>
 {% endblock content %}
