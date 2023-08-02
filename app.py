@@ -14,8 +14,8 @@ from seed_pokédex import seed_pokedex
 app.cli.add_command(seed_pokedex)
 
 from controllers.pokémon_controller import pokémon_blueprint
-from controllers.nurse_controller import nurses_blueprint
-from controllers.trainer_controller import trainers_blueprint
+from controllers.nurses_controller import nurses_blueprint
+from controllers.trainers_controller import trainers_blueprint
 
 
 app.register_blueprint(pokémon_blueprint)

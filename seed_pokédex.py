@@ -1,5 +1,6 @@
 from app import db
 from models.pokédex_model import Pokédex
+from models.pokémon_model import Pokémon
 import click
 
 from flask.cli import with_appcontext
@@ -9,6 +10,7 @@ import requests
 @click.command(name='seed_pokedex')
 @with_appcontext
 def seed_pokedex():
+    Pokémon.query.delete() # if you already have pokémon in your database, need to clear them first
     Pokédex.query.delete()
     id = range(1, 1011)
     for n in id:
@@ -18,11 +20,13 @@ def seed_pokedex():
         print(response.text)
       else:
         data = response.json()
-        new_entry = Pokédex(id=data['id'], name=data['species']['name'])
+        pokédex_id = data['id']
+        pokémon_name = data['species']['name']
+        new_entry = Pokédex(id=pokédex_id, name=pokémon_name)
         db.session.add(new_entry)
         db.session.commit()
         ### Files below writes the desired data into another file
         ### Comment out if you do not want it to write
         # log = open('pokédex_backup.py', 'a')
-        # log.write(f"pokédexentry{data['id']} = Pokédex(id='{data['id']}', name='{data['species']['name']}')\n")
+        # log.write(f"pokédexentry{pokédex_id} = Pokédex(id='{pokédex_id}', name='{pokémon_name}')\n ")
         # log.close()

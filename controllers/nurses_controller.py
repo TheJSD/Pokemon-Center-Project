@@ -1,5 +1,4 @@
 from flask import Flask, Blueprint, render_template, request, redirect
-from models.pokémon_model import empty_returns_null
 from models.nurse_model import Nurse
 from models.trainer_model import Trainer
 from app import db

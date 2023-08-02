@@ -10,8 +10,8 @@ from flask.cli import with_appcontext
 @click.command(name='seed')
 @with_appcontext
 def seed():
-    Trainer.query.delete()
     Pokémon.query.delete()
+    Trainer.query.delete()
     Nurse.query.delete()
     nurse1=Nurse(name="Nurse Joy 1")
     nurse2=Nurse(name="Nurse Joy 2")
