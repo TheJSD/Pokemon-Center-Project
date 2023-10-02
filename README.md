@@ -1,25 +1,25 @@
 This is a Python webapp was for a project that had a vet prompt to build a web application that would help them manage their animals and vets (but instead of a vet, I've modelled it after a Pokémon Center).
 
 Requirements:
-'''
+```
 Flask
 Flask-Migrate
 Jinja2
 SQLAlchemy
 postgresql
 import (To import the pokédex data using Pokéapi)
-'''
+```
 These can be installed using pip (for example, the terminal command to install import would be 'pip3 import').
 
 Set up:
 1. First you need to set up a database called "pokecenter". In postgresql the command will be 'createdb pokecenter'. Go into app.py and on line 7 (app.config) and change the username to yours.
 
 2. Initiate, migrate, and upgrade the models. Run the following commands (note, you will need to run these flask commands from the terminal in the relevant directory, which would be in the main folder which contains all the pokémon center files):
-'''
+```
 flask db init
 flask db migrate
 flask db upgrade
-'''
+```
 
 3. Run the seed files - in your Terminal (and again running within the main folder) and enter 'flask seed_pokédex' - this will fill up your pokédex table in your database with entries 1 to 1010 (i.e. all the currently available pokémon). Then run 'flask seed' - this will enter in some example entries for instances of pokémon, trainers and nurses.
 
