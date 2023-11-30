@@ -21,7 +21,7 @@ flask db migrate
 flask db upgrade
 ```
 
-3. Run the seed files - in your Terminal (and again running within the main folder) and enter 'flask seed_pokédex' - this will fill up your pokédex table in your database with entries 1 to 1010 (i.e. all the currently available pokémon). Then run 'flask seed' - this will enter in some example entries for instances of pokémon, trainers and nurses.
+3. Run the seed files - in your Terminal (and again running within the main folder) and enter 'flask seed_pokedex' - this will fill up your pokédex table in your database with entries 1 to 1010 (i.e. all the currently available pokémon). Then run 'flask seed' - this will enter in some example entries for instances of pokémon, trainers and nurses.
 
 Once you have done those steps, the application should be able to run, which is done by typing in 'flask run'. You will be able to open it in your browser entering in 'localhost:4999'. By default this webapp will run on port 4999, which can be changed from the .flaskenv file if something else is already using that port (just change FLASK_RUN_PORT to whichever port you desire).
 
