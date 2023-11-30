@@ -7,7 +7,7 @@ Flask-Migrate
 Jinja2
 SQLAlchemy
 postgresql
-import (To import the pokédex data using Pokéapi)
+requests
 ```
 These can be installed using pip (for example, the terminal command to install import would be 'pip3 import').
 
