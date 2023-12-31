@@ -1,4 +1,4 @@
-This is a Python webapp was for a project that had a vet prompt to build a web application that would help them manage their animals and vets (but instead of a vet, I've modelled it after a Pokémon Center).
+This is a Python web application for a brief to build a web application that would a veterinary practice to manage their animals and staff (but instead of a vet, I've formatted it after a Pokémon Center).
 
 Requirements:
 ```
@@ -9,7 +9,7 @@ SQLAlchemy
 postgresql
 requests
 ```
-These can be installed using pip (for example, the terminal command to install import would be 'pip3 import').
+These can be installed using pip or similar command line tools for installing python modules (for example, the terminal command to install import would be 'pip3 import').
 
 Set up:
 1. First you need to set up a database called "pokecenter". In postgresql the command will be 'createdb pokecenter'. Go into app.py and on line 7 (app.config) and change the username to yours.
